@@ -1,7 +1,85 @@
-@import 'vars';
-@import 'fonts';
 @import 'reset';
+@import 'fonts';
+@import 'vars';
 @import 'global';
+
+.header {
+  padding-top: 50px;
+  &__inner {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+.menu{
+  &__list {
+    display: flex;
+  }
+  &__list-item + .menu__list-item {
+    padding-left: 20px;
+  }
+  &__list-link {
+    @extend %rubik-500;
+    font-size: 15px;
+    line-height: 12px;
+    color: #436372;
+  }
+}
+
+.user-nav {
+  display: flex;
+  align-items: center;  
+  &__search {
+    width: 51px;
+    height: 51px;
+    margin-right: 20px;
+    padding: 18px;
+    background-color: #edf1f4;
+    border-radius: 50%;
+  }
+  &__purchase {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 178px;
+    height: 51px;
+    margin-right: 17px;
+    background-color: #fcd7b6;
+    border-radius: 50px;       
+  }
+  &__purchase-link {
+    position: relative;    
+  }
+  &__num {
+    @extend %dmsans-400;
+    font-size: 10px;
+    line-height: 16px;
+    color: $default;  
+    text-align: center;
+    width: 16px;
+    height: 16px;
+    top: -9px;
+    right: -10px;
+    background-color: #fff;
+    border-radius: 50%;
+    position: absolute;
+  }
+  &__menu {
+    width: 51px;
+    height: 51px;
+    background-color: #a3bbc8;
+    border-radius: 50%;
+    padding: 16px;  
+  }
+}
+
+
+
+
+
+
+
+
 
 
 @import 'media';
