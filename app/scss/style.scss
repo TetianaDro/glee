@@ -21,7 +21,7 @@
   &__list-link {
     @extend %rubik-500;
     font-size: 15px;
-    line-height: 12px;
+    line-height: 32px;
     color: #436372;
   }
 }
@@ -54,7 +54,7 @@
     @extend %dmsans-400;
     font-size: 10px;
     line-height: 16px;
-    color: $default;  
+    color: $accent;  
     text-align: center;
     width: 16px;
     height: 16px;
@@ -71,6 +71,89 @@
     border-radius: 50%;
     padding: 16px;  
   }
+}
+
+.footer-top {
+  padding: 78px 0;
+  border-bottom: 1px solid #dae4e9;
+  display: flex;
+  &__logo {
+    margin-bottom: 26px;
+    display: block;
+  }
+  &__item {
+    width: 300px;
+  }
+  &__adress,
+  &__phone,
+  &__email {
+    display: block;
+    margin-bottom: 12px;    
+  }
+  &__adress{
+    width: 194px;
+  }
+  &__title {
+    @extend %dmsans-700;
+    font-size: 16px;
+    line-height: 52px;
+    color: #1f2044;
+    text-transform: uppercase;
+    margin-bottom: 2px;
+  }
+  &__link {
+    display: block;
+    margin-bottom: 10px;
+  }
+  &__text {
+    max-width: 240px;
+    width: 100%;
+    margin-bottom: 34px;
+  }
+  &__form {
+    display: flex;
+    max-width: 270px;
+    width: 100%;
+  }
+  &__form-input {
+    border: none;
+    background-color: $bg;    
+    padding: 7px 10px 11px 14px;    
+    &::placeholder {
+      @extend %dmsans-400;
+      font-size: 12px;
+      color: #234969;
+    }
+  }  
+  &__form-btn {
+    border: none;
+    background-color: #a3bbc8;
+    @extend %dmsans-400;
+    font-size: 14px;
+    line-height: 21px;
+    color: #fff;
+    padding: 10px 19px 10px 14px;
+    cursor: pointer;  
+  }
+}
+
+.footer-bottom {
+  height: 90px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  line-height: 32px;
+  &__menu-item {
+    display: inline;
+    &::after {
+      content: '|';
+      font-size: 18px;
+      padding: 0 13px;
+    }
+    &:last-child::after {
+      display: none;
+    }
+  }    
 }
 
 

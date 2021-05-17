@@ -1,10 +1,10 @@
 @font-face {
-  font-family: 'DMSans-Bold', sans-serif;
-  font-weight: 700;
+  font-family: 'DMSans-Regular', sans-serif;
+  font-weight: 400;
   font-style: normal;
-  src: local('DMSans-Bold'),
-    url('../fonts/DMSans-Bold.woff2') format('woff2'),
-    url('../fonts/DMSans-Bold.woff') format('woff');
+  src: local('DMSans-Regular'),
+    url('../fonts/DMSans-Regular.woff2') format('woff2'),
+    url('../fonts/DMSans-Regular.woff') format('woff');
   font-display: swap;
 }
 
@@ -19,22 +19,22 @@
 }
 
 @font-face {
-  font-family: 'DMSans-Regular', sans-serif;
-  font-weight: 400;
+  font-family: 'DMSans-Bold', sans-serif;
+  font-weight: 700;
   font-style: normal;
-  src: local('DMSans-Regular'),
-    url('../fonts/DMSans-Regular.woff2') format('woff2'),
-    url('../fonts/DMSans-Regular.woff') format('woff');
+  src: local('DMSans-Bold'),
+    url('../fonts/DMSans-Bold.woff2') format('woff2'),
+    url('../fonts/DMSans-Bold.woff') format('woff');
   font-display: swap;
 }
 
 @font-face {
-  font-family: 'Poppins-Bold', sans-serif;
-  font-weight: 700;
+  font-family: 'Rubik-Regular', sans-serif;
+  font-weight: 400;
   font-style: normal;
-  src: local('Poppins-Bold'),
-    url('../fonts/Poppins-Bold.woff2') format('woff2'),
-    url('../fonts/Poppins-Bold.woff') format('woff');
+  src: local('Rubik-Regular'),
+    url('../fonts/Rubik-Regular.woff2') format('woff2'),
+    url('../fonts/Rubik-Regular.woff') format('woff');
   font-display: swap;
 }
 
@@ -49,11 +49,11 @@
 }
 
 @font-face {
-  font-family: 'Rubik-Regular';
-  font-weight: 400;
+  font-family: 'Poppins-Bold', sans-serif;
+  font-weight: 700;
   font-style: normal;
-  src: local('Rubik-Regular'),
-    url('../fonts/Rubik-Regular.woff2') format('woff2'),
-    url('../fonts/Rubik-Regular.woff') format('woff');
+  src: local('Poppins-Bold'),
+    url('../fonts/Poppins-Bold.woff2') format('woff2'),
+    url('../fonts/Poppins-Bold.woff') format('woff');
   font-display: swap;
 }
