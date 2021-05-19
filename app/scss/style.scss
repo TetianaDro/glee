@@ -1,10 +1,11 @@
 @import 'reset';
 @import 'fonts';
+@import 'libs';
 @import 'vars';
 @import 'global';
 
 .header {
-  padding-top: 50px;
+  padding: 50px 0 42px;
   &__inner {
     display: flex;
     justify-content: space-between;
@@ -12,16 +13,17 @@
 }
 
 .menu{
+  margin-left: 150px;
   &__list {
     display: flex;
   }
   &__list-item + .menu__list-item {
-    padding-left: 20px;
+    padding-left: 34px;
   }
   &__list-link {
     @extend %rubik-500;
     font-size: 15px;
-    line-height: 32px;
+    line-height: 34px;
     color: #436372;
   }
 }
@@ -72,6 +74,102 @@
     padding: 16px;  
   }
 }
+
+.top-slider {  
+  &__inner {
+    background-color: #fcd7b6;    
+  }
+  &__item {
+    display: flex !important;
+    justify-content: space-between;
+    margin: 0 auto 207px;
+    max-width: 1173px;
+    position: relative;   
+    &::after {
+      content: '';
+      top: 99px;
+      right: -115px;
+      width: 634px;
+      height: 634px;      
+      background: linear-gradient(left, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 1) 100%);
+      position: absolute;
+      border-radius: 50%;      
+      z-index: 1;
+    }
+  }
+  &__content {
+    padding-top: 218px;  
+  }
+  &__title {
+    @extend %rubik-500;
+    font-size: 72px;
+    line-height: 70px;
+    color: $accent;
+    width: 500px;
+    margin-bottom: 25px;
+    text-transform: uppercase;
+  }
+  &__text {
+    font-size: 18px;
+    line-height: 30px;
+    color: #436372;
+    width: 370px;
+    margin-bottom: 36px;
+  }
+  &__link {
+    padding: 24px 0 21px 27px;
+    background-color: #a3bbc8;
+    @extend %rubik-500;
+    font-size: 15px;
+    line-height: 15px;
+    color: #fff; 
+    display: inline-block;
+  }
+  &__link::after {
+    content: url('../images/icons/arrow.svg');
+    padding-left: 60px;
+    padding-right: 19px;
+  }
+  &__img {
+    width: 640px;
+    height: 264px;
+    margin-top: 275px;  
+    position: relative;    
+    z-index: 999;
+  }
+  .slick-dots {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 45px;
+    li{
+      padding-left: 10px;
+      button {
+        padding: 0;
+        width: 30px;
+        height: 29px;
+        border: none;
+        border-radius: 50%;
+        background-color: #fde3cc;
+        @extend %rubik-500;
+        font-size: 11px;
+        color: #667983;
+      }
+      &.slick-active {
+        button {
+          background-color: #fff;
+          color: $accent;
+        }
+      }      
+    }    
+  }
+}
+
+
+
+
+
+
+
 
 .footer-top {
   padding: 78px 0;
@@ -155,14 +253,5 @@
     }
   }    
 }
-
-
-
-
-
-
-
-
-
 
 @import 'media';
