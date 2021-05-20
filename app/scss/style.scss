@@ -1,7 +1,7 @@
 @import 'reset';
 @import 'fonts';
-@import 'libs';
 @import 'vars';
+@import 'libs';
 @import 'global';
 
 .header {
@@ -260,6 +260,7 @@
     grid-column-gap: 30px;
     grid-row-gap: 40px;
     height: 802px;
+    margin-bottom: 183px;
   }
   &__item {
     border-radius: 10px;
@@ -322,6 +323,26 @@
 .mixitup-control-active {
   color: $title;
 }
+
+
+
+.video {
+  &__popup {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    height: 500px;
+    position: relative;
+    margin-bottom: 112px;
+  }
+  &__play-btn {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    position: absolute;
+  }
+}
+
 
 
 .footer-top {
