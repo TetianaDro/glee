@@ -34,3 +34,12 @@ a {
   line-height: 24px;
   color: $default;
 }
+
+.title {
+  @extend %dmsans-700;
+  font-size: 36px;
+  line-height: 42px;
+  color: $title;
+  text-align: center;
+}
+
