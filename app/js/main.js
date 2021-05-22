@@ -10,4 +10,5 @@ $(function(){
 
 
   var mixer = mixitup('.week-products__inner');
+  var mixer = mixitup('.new-design__inner');
 });

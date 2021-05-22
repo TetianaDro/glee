@@ -229,14 +229,7 @@
     margin-bottom: 78px;
   }
   &__btn {
-    background-color: transparent;
-    border: none;
-    @extend %dmsans-700;
-    font-size: 16px;
-    line-height: 19px;
-    color: #8b8b8b;
-    padding: 0; 
-    cursor: pointer;        
+    @extend %menu-btn;       
   }
   &__btn + .week-products__btn {
     margin-left: 30px;
@@ -393,6 +386,45 @@
   }
 }
 
+.new-design {
+  margin: 102px 0 124px;
+  &__filter-btn {
+    margin:24px 0 75px;
+    text-align: center;
+  }
+  &__btn {
+    @extend %menu-btn;
+  }
+  &__btn + .new-design__btn {
+    margin-left: 30px;
+  }
+  &__inner {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 35px 30px;    
+  }
+  &__item {
+    height: 246px; 
+    background-repeat: no-repeat; 
+    background-size: cover;
+    background-position: right bottom;
+  }
+  &__content {
+    padding: 42px 0 0 40px;
+  }
+  &__content-title {
+    @extend %dmsans-700;
+    font-size: 20px;
+    color: $title;
+    width: 166px;
+    margin-bottom: 18px;
+  }
+  &__content-text {
+    @extend %dmsans-700;
+    font-size: 16px;
+    color: #a3bbc8;
+  }
+}
 
 
 

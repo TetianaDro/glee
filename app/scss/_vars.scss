@@ -29,7 +29,16 @@ $bg: #fef7f0;
   font-weight: 400;
 }
 
-
+%menu-btn {
+  background-color: transparent;
+  border: none;
+  @extend %dmsans-700;
+  font-size: 16px;
+  line-height: 19px;
+  color: #8b8b8b;
+  padding: 0;
+  cursor: pointer;
+}
 
 @function max($numbers...) {
   @return m#{a}x(#{$numbers});
