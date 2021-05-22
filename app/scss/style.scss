@@ -224,9 +224,9 @@
 
 .week-products {
   &__filter-btn {
-    margin-top: 40px;
+    margin-top: 25px;
     text-align: center;
-    margin-bottom: 80px;
+    margin-bottom: 78px;
   }
   &__btn {
     background-color: transparent;
@@ -244,9 +244,9 @@
   &__content-title {
     @extend %dmsans-500;
     font-size: 16px;
-    line-height: 40px;
+    line-height: 18px;
     color: $accent;
-  }
+  }  
   &__content-text {
     @extend %dmsans-700;
     font-size: 16px;
@@ -258,8 +258,7 @@
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     grid-column-gap: 30px;
-    grid-row-gap: 40px;
-    height: 802px;
+    grid-row-gap: 40px;    
     margin-bottom: 183px;
   }
   &__item {
@@ -268,10 +267,17 @@
     box-shadow: 0px 6px 47px 3px rgba(37, 37, 37, 0.05);
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
     position: relative;
-  }  
+    max-width: 272px;
+    width: 100%;
+    height: 380px;
+    padding: 30px 0 25px;
+  } 
+  &__item-img {
+    object-fit: cover;
+  } 
   &__overlay {
     position: absolute;
     width: 100%;
@@ -289,7 +295,8 @@
     transform: translate(-50%, -50%);
     width: 100%; 
     display: flex;
-    justify-content: center;  
+    justify-content: center;
+    transition: all .3s;
   }
   &__overlay-link + .week-products__overlay-link {
     margin-left: 16px;
@@ -302,7 +309,8 @@
     border-radius: 50%; 
     position: relative;
     &:hover {
-      background-color: #a3bbc8;      
+      background-color: #a3bbc8;
+      transition: all .3s;
     }          
   }
   &__overlay-img {
@@ -315,14 +323,77 @@
 
 .week-products__card:hover .week-products__overlay {
   opacity: 1;
+  transition: all .3s;
 }
 
 .week-products__overlay-link:hover path {
   fill: #fff;
+  transition: all .3s;
 }
 .mixitup-control-active {
   color: $title;
 }
+
+.lamp-card {  
+  &__inner {
+  display: flex;
+  justify-content: space-between; 
+  margin-bottom: 60px; 
+  }
+ &__item {       
+    background-color: #feefe2;
+    max-width: 870px;
+    width: 100%;
+    height: 390px; 
+    position: relative; 
+    padding-top: 83px;
+    display: flex;
+    justify-content: flex-end; 
+    padding-right: 90px;               
+  }  
+  &__content {
+    width: 350px; 
+  }
+  &__content_first-card {
+    margin-top: 12px;
+    margin-right: 43px;
+       
+  }
+  &__item-img {
+    position: absolute;
+    top: -100px;
+    left: 135px;
+  }
+  &__content-title {
+    @extend %dmsans-700;
+    font-size: 26px;
+    line-height: 32px;
+    color: $accent;
+    margin-bottom: 9px;
+  }
+  &__content-text {
+    font-size: 16px;
+    line-height: 30px;
+    color: $accent;
+    margin-bottom: 46px;
+  }
+  &__content-link {    
+    @extend %rubik-500;
+    font-size: 15px;
+    line-height: 1;
+    color: #436372;
+    border: 1px solid #b3b7b5;
+    border-radius: 5px;
+    padding: 20px 0 21px 17px;    
+    &::after {
+      content: url('../images/icons/arrow-2.svg');
+      padding-left: 42px;
+      padding-right: 19px;      
+    }    
+  }
+}
+
+
 
 
 
