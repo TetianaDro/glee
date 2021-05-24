@@ -338,27 +338,22 @@
     max-width: 870px;
     width: 100%;
     height: 390px; 
-    position: relative; 
-    padding-top: 83px;
-    display: flex;
-    justify-content: flex-end; 
-    padding-right: 90px;  
-    &:first-child {
-      margin-right: 25px;
-    }               
-  }  
+    display: flex;    
+    justify-content: center;
+  } 
+  &__img {
+    margin-top: -102px;        
+  }
   &__content {
-    width: 350px; 
+    width: 350px;
+    margin-top: 80px; 
+    margin-left: 64px;
+    margin-right: -50px;
   }
   &__content_first-card {
-    margin-top: 12px;
-    margin-right: 43px;       
-  }
-  &__item-img { 
-    position: absolute;
-    top: -100px;
-    left: 135px;
-  }
+    margin-top: 102px;
+    margin-left: 18px;     
+  }  
   &__content-title {
     @extend %dmsans-700;
     font-size: 26px;
@@ -447,7 +442,7 @@
 }
 
 .blog{
-  margin-bottom: -173px;
+  margin-bottom: -172px;
   &__inner-top {
     margin-bottom: 46px;
   }
