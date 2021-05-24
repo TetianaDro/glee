@@ -176,7 +176,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    max-width: 589px;
+    width: 33.333%;
     width: 100%;    
     border-left: 1px solid #a3bac7;     
   }
@@ -342,17 +342,19 @@
     padding-top: 83px;
     display: flex;
     justify-content: flex-end; 
-    padding-right: 90px;               
+    padding-right: 90px;  
+    &:first-child {
+      margin-right: 25px;
+    }               
   }  
   &__content {
     width: 350px; 
   }
   &__content_first-card {
     margin-top: 12px;
-    margin-right: 43px;
-       
+    margin-right: 43px;       
   }
-  &__item-img {
+  &__item-img { 
     position: absolute;
     top: -100px;
     left: 135px;
@@ -387,9 +389,9 @@
 }
 
 .new-design {
-  margin: 102px 0 124px;
+  margin: 102px 0 122px;
   &__filter-btn {
-    margin:24px 0 75px;
+    margin:24px 0 73px;
     text-align: center;
   }
   &__btn {
@@ -408,16 +410,17 @@
     background-repeat: no-repeat; 
     background-size: cover;
     background-position: right bottom;
+    object-fit: cover;
   }
   &__content {
-    padding: 42px 0 0 40px;
+    padding: 40px 0 0 38px;
   }
   &__content-title {
     @extend %dmsans-700;
     font-size: 20px;
     color: $title;
-    width: 166px;
-    margin-bottom: 18px;
+    width: 176px;
+    margin-bottom: 11px;
   }
   &__content-text {
     @extend %dmsans-700;
@@ -425,9 +428,6 @@
     color: #a3bbc8;
   }
 }
-
-
-
 
 .video {
   &__popup {
@@ -446,10 +446,111 @@
   }
 }
 
+.blog{
+  margin-bottom: -173px;
+  &__inner-top {
+    margin-bottom: 46px;
+  }
+  &__inner-top,
+  &__items {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;    
+  }  
+  &__inner-link {
+    display: block;
+    @extend %dmsans-700;
+    font-size: 16px;
+    color: #262626;    
+    position: relative;
+    &::after {
+      content: '>';
+      padding-left: 14px;
+    }
+  }
+  &__item {
+    width: 370px;    
+    border-radius: 5px;
+    box-shadow: 0px 6px 47px 3px rgba(37, 37, 37, 0.05);
+  }
+  &__item-img {
+    object-fit: cover;
+  }
+  &__item-content {
+    padding: 0 28px 23px 28px;
+    background-color: #fff;    
+  }
+  &__item-news {
+    @extend %poppins-700;
+    font-size: 14px;
+    line-height: 20px;
+    color: #fff;
+    text-transform: uppercase;
+    background-color: #a3bbc8;
+    border-radius: 25px;
+    display: block;
+    width: 103px;
+    height: 30px;
+    text-align: center; 
+    padding: 5px 0;
+    margin: -15px 0 19px;
+    position: relative;
+    z-index: 9999;    
+  }
+  &__item-title {
+    @extend %dmsans-500;
+    font-size: 18px;
+    line-height: 22px;
+    color: #262626;
+    padding-bottom: 18px;
+    border-bottom: 1px solid #e0e0e0;
+    height: 78px;
+    overflow: hidden;    
+  }
+  &__item-bottom {
+    display: flex; 
+    padding-top: 14px;   
+  }
+  &__item-date {
+    padding-right: 24px;
+  }
+  &__item-date,
+  &__item-author {
+    font-size: 12px;
+    color: #222933;
+    text-transform: uppercase;
+    padding-left: 20px;
+    position: relative;
+    &::before {
+      content: '';
+      position: absolute;
+      width: 20px;
+      height: 20px;
+      top: 4px;
+      left: 0;
+      background-repeat: no-repeat;
+    }  
+  }
+  &__item-date::before {
+    background-image: url(../images/icons/data.svg);
+  }
+  &__item-author::before {
+    background-image: url(../images/icons/user.svg);
+  }
+}
 
+.clients {
+  padding: 262px 0 90px;
+  background-color: $bg;
+  &__list {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+}
 
 .footer-top {
-  padding: 78px 0;
+  padding: 78px 5px;
   border-bottom: 1px solid #dae4e9;
   display: flex;
   &__logo {
@@ -457,7 +558,8 @@
     display: block;
   }
   &__item {
-    width: 300px;
+    max-width: 300px;
+    width: 100%;
   }
   &__adress,
   &__phone,
@@ -492,7 +594,8 @@
   }
   &__form-input {
     border: none;
-    background-color: $bg;    
+    background-color: $bg; 
+    width: 172px;   
     padding: 7px 10px 11px 14px;    
     &::placeholder {
       @extend %dmsans-400;
