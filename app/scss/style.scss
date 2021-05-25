@@ -82,20 +82,8 @@
   &__item {
     display: flex !important;
     justify-content: space-between;
-    margin: 0 auto 207px;
-    max-width: 1173px;
-    position: relative;   
-    &::after {
-      content: '';
-      top: 99px;
-      right: -115px;
-      width: 634px;
-      height: 634px;      
-      background: linear-gradient(left, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 1) 100%);
-      position: absolute;
-      border-radius: 50%;      
-      z-index: 1;
-    }
+    margin: 0 auto 89px;
+    max-width: 1173px;    
   }
   &__content {
     padding-top: 218px;  
@@ -130,12 +118,8 @@
     padding-left: 60px;
     padding-right: 19px;
   }
-  &__img {
-    width: 640px;
-    height: 264px;
-    margin-top: 275px;  
-    position: relative;    
-    z-index: 999;
+  &__img { 
+    margin: 98px 180px 0 28px;    
   }
   .slick-dots {
     display: flex;
@@ -279,7 +263,7 @@
     left: 0;
     opacity: 0;
     background-color: transparent;
-    transition: opacity .3s;
+    transition: all .3s;
   }
   &__overlay-links {
     position: absolute;
@@ -289,7 +273,7 @@
     width: 100%; 
     display: flex;
     justify-content: center;
-    transition: all .3s;
+    transition: all .4s;
   }
   &__overlay-link + .week-products__overlay-link {
     margin-left: 16px;
@@ -302,9 +286,10 @@
     border-radius: 50%; 
     position: relative;
     border:none;
+    transition: all .5s;
+    cursor: pointer;
     &:hover {
       background-color: #a3bbc8;
-      transition: all .3s;
     }          
   }
   &__overlay-img {
@@ -316,13 +301,11 @@
 }
 
 .week-products__card:hover .week-products__overlay {
-  opacity: 1;
-  transition: all .3s;
+  opacity: 1;  
 }
 
 .week-products__overlay-link:hover path {
-  fill: #fff;
-  transition: all .3s;
+  fill: #fff;  
 }
 .mixitup-control-active {
   color: $title;
@@ -407,6 +390,10 @@
     background-size: cover;
     background-position: right bottom;
     object-fit: cover;
+    transition: transform .2s;
+    &:hover {
+      transform: scale(1.05);
+    }
   }
   &__content {
     padding: 40px 0 0 38px;
@@ -468,6 +455,10 @@
     width: 370px;    
     border-radius: 5px;
     box-shadow: 0px 6px 47px 3px rgba(37, 37, 37, 0.05);
+    transition: transform .2s;
+    &:hover {
+      transform: scale(1.05);
+    }
   }
   &__item-img {
     object-fit: cover;
