@@ -43,3 +43,25 @@ a {
   text-align: center;
 }
 
+.breadcrumbs {
+  display: flex;
+  justify-content: center;
+  &__list {
+    display: inline-flex;
+  }
+  &__item {
+    padding-right: 8px;
+    color: #737980;
+      &::after {
+      content: '/';
+      padding-left: 8px; 
+      color: #737980;
+    }
+    &:last-child {
+      padding-right: 0;
+      &:after {
+        display: none;
+      }
+    }
+  }  
+}

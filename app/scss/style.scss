@@ -536,6 +536,22 @@
   }
 }
 
+.top-container {
+  background-color: #edf1f4;
+  padding: 32px 0;
+  text-align: center;
+  &__title {
+    @extend %rubik-300;
+    font-size: 36px;
+    line-height: 24px;
+    color: #222933;
+    margin-bottom: 9px;
+  }
+}
+
+
+
+
 .footer-top {
   padding: 78px 5px;
   border-bottom: 1px solid #dae4e9;
