@@ -50,11 +50,11 @@ a {
     display: inline-flex;
   }
   &__item {
-    padding-right: 8px;
+    padding-right: 5px;
     color: #737980;
       &::after {
       content: '/';
-      padding-left: 8px; 
+      padding-left: 5px; 
       color: #737980;
     }
     &:last-child {
@@ -65,3 +65,4 @@ a {
     }
   }  
 }
+

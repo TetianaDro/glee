@@ -5,7 +5,7 @@
 @import 'global';
 
 .header {
-  padding: 50px 0 42px;
+  padding: 50px 0 43px;
   &__inner {
     display: flex;
     justify-content: space-between;
@@ -535,25 +535,84 @@
     align-items: center;
   }
 }
+.clients__login {
+  padding-top: 76px;
+}
 
 .top-container {
   background-color: #edf1f4;
-  padding: 32px 0;
+  padding: 33px 0;
   text-align: center;
   &__title {
     @extend %rubik-300;
     font-size: 36px;
     line-height: 24px;
     color: #222933;
-    margin-bottom: 9px;
+    margin-bottom: 12px;
   }
+}
+
+.modal {
+  padding-top: 106px;
+  max-width: 500px;
+  margin: 0 auto 121px;
+  width: 100%;
+  &__label {
+    display: block;
+    margin-bottom: 15px;
+    color: #436372;
+    line-height: 40px;
+  }
+  &__form-label {
+    margin-bottom: 0;
+  }
+  &__input {
+    display: block;
+    width: 100%;
+    border: 2px solid #f6f6f6;    
+    height: 58px;
+    padding: 0 15px;
+  }
+  &__btn {
+    color: #fffefe;
+    border: none;
+    background-color: #a3bbc8;
+    margin: 26px 0 24px;  
+    cursor: pointer;  
+  }
+  &__btn,
+  &__bottom-btn {
+    width: 100%;
+    @extend %rubik-500;
+    font-size: 18px;    
+    padding: 17px 0;
+  }
+  &__bottom-btn {
+    display: block;
+    color: $accent;
+    border: 2px solid #a3bbc8;
+    margin-top: 22px;
+  }
+  &__form-bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 18px;
+    border-bottom: 2px solid #f6f6f6;
+    margin-bottom: 26px;
+  }
+  &__link {
+    color: #436372;    
+  }
+  &__bottom {
+    text-align: center;
+  }  
 }
 
 
 
-
 .footer-top {
-  padding: 78px 5px;
+  padding: 72px 5px 52px;
   border-bottom: 1px solid #dae4e9;
   display: flex;
   &__logo {
@@ -629,7 +688,7 @@
     &::after {
       content: '|';
       font-size: 18px;
-      padding: 0 13px;
+      padding: 0 10px;
     }
     &:last-child::after {
       display: none;
