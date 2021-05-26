@@ -76,16 +76,42 @@
 
     <section class="top-container">
       <div class="container">
-        <h3 class="top-container__title">Log in</h3>
+        <h3 class="top-container__title">Product list 1</h3>
         <div class="breadcrumbs">
           <ul class="breadcrumbs__list">
             <li class="breadcrumbs__item">
               <a href="#" class="breadcrumbs__link" href="#">Home</a>
             </li>
             <li class="breadcrumbs__item">
-              <a href="#" class="breadcrumbs__link" href="#">Log in</a>
+              <a href="#" class="breadcrumbs__link" href="#">Product list 1</a>
             </li>            
           </ul>
+        </div>
+      </div>
+    </section>
+
+    <section class="product-page">
+      <div class="container">
+        <div class="product-page__inner">
+          <div class="product-page__filters filter">
+
+            <div class="filter__item"></div>
+            <div class="filter__item filter-price">
+              <h3 class="filter__title">
+                Price
+              </h3>
+              <form class="filter-price__form" action="#">
+                <input class="filter-price__input" type="text"
+                data-min="0"
+                data-max="850"
+                data-from="100.00"
+                data-to="500.00">                
+              </form>
+            </div>
+
+          </div>
+
+          <div class="product-content"></div>
         </div>
       </div>
     </section>
