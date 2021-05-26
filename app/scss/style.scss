@@ -69,7 +69,7 @@
   &__menu {
     width: 51px;
     height: 51px;
-    background-color: #a3bbc8;
+    background-color: $neptun;
     border-radius: 50%;
     padding: 16px;  
   }
@@ -106,7 +106,7 @@
   }
   &__link {
     padding: 24px 0 21px 27px;
-    background-color: #a3bbc8;
+    background-color: $neptun;
     @extend %rubik-500;
     font-size: 15px;
     line-height: 15px;
@@ -228,7 +228,7 @@
     @extend %dmsans-700;
     font-size: 16px;
     line-height: 40px;
-    color: #a3bbc8;
+    color: $neptun;
     text-align: center;
   }
   &__inner {
@@ -289,7 +289,7 @@
     transition: all .5s;
     cursor: pointer;
     &:hover {
-      background-color: #a3bbc8;
+      background-color: $neptun;
     }          
   }
   &__overlay-img {
@@ -408,7 +408,7 @@
   &__content-text {
     @extend %dmsans-700;
     font-size: 16px;
-    color: #a3bbc8;
+    color: $neptun;
   }
 }
 
@@ -473,7 +473,7 @@
     line-height: 20px;
     color: #fff;
     text-transform: uppercase;
-    background-color: #a3bbc8;
+    background-color: $neptun;
     border-radius: 25px;
     display: block;
     width: 103px;
@@ -576,7 +576,7 @@
   &__btn {
     color: #fffefe;
     border: none;
-    background-color: #a3bbc8;
+    background-color: $neptun;
     margin: 26px 0 24px;  
     cursor: pointer;  
   }
@@ -590,7 +590,7 @@
   &__bottom-btn {
     display: block;
     color: $accent;
-    border: 2px solid #a3bbc8;
+    border: 2px solid $neptun;
     margin-top: 22px;
   }
   &__form-bottom {
@@ -632,7 +632,7 @@
     &::after {
       content: '';
       position: absolute;
-      border-top: 3px solid #a3bbc8;
+      border-top: 3px solid $neptun;
       width: 38px;
       top: 10px;
       left: 65px;      
@@ -672,13 +672,13 @@
 .irs--flat .irs-bar {
   top: 25px;
   height: 4px;
-  background-color: #a3bbc8;
+  background-color: $neptun;
 }
 .irs--flat .irs-handle {
   top: 20px;
   width: 15px;
   height: 15px;
-  background-color: #a3bbc8;
+  background-color: $neptun;
 }
 .irs--flat .irs-handle>i:first-child {
   display: none;
@@ -711,6 +711,262 @@
   &__item {
     margin-bottom: 20px;
     padding-left: 5px;
+  }
+}
+
+.about {
+  &__title {
+    @extend %dmsans-700;
+    font-size: 36px;
+    color: $accent;    
+  }
+}
+
+.about-top {
+  padding: 118px 0;
+  display: flex;
+  color: $accent;
+  &__image {
+    object-fit: cover;
+    max-width: 574px;  
+  }
+  &__content {
+    padding: 100px 0 74px 50px;
+  }
+  &__subtitle {
+    display: flex;
+    margin-bottom: 48px;
+  }
+  &__subtitle-num {
+    @extend %rubik-700;
+    font-size: 140px;
+    line-height: 68px;
+    color: $neptun;
+    margin-right: 22px;
+  }
+  &__items-text {
+    display: flex;
+    flex-direction: column;           
+  }
+  &__subtitle-text {
+    font-size: 16px;
+    line-height: 30px;    
+  }  
+  &__text {
+    font-size: 16px;
+    line-height: 30px;
+    padding: 42px 0 62px;    
+    position: relative;
+    &::after {
+      content: '';
+      position: absolute;
+      width: 500px;
+      border-bottom: 3px solid #e6eaf0;
+      left: 0;
+      bottom: 0;        
+    }
+  }
+  &__inner {
+    margin-top: 40px;
+    display: flex;
+  }
+  &__num {
+    padding-left: 52px;
+    padding-right: 65px;
+    @extend %dmsans-700;
+    position: relative;
+    &::after {
+      content: '';
+      position: absolute;
+      border-right: 1px solid #e6eaf0;
+      height: 81px;
+      top: -12px;
+      right: 30px;
+    }
+    &:last-child {     
+      &::after {
+        display: none;
+      }
+    }
+  }
+  &__num-title{
+    font-size: 36px;
+    line-height: 38px;
+  }
+  &__num-text {
+    margin-top: 10px;
+    font-size: 16px;
+    line-height: 17px;
+    color: #4c4c4c;    
+  }
+  &__projects,
+  &__revenue,
+  &__awards {
+    position: relative;
+    &::before {
+      content: '';
+      position: absolute;
+      background-repeat: no-repeat;
+      width: 44px;
+      height: 41px;
+      left: 0;
+      top: 8px;
+    }
+  }
+  &__projects {    
+    &::before {
+      background-image: url(../images/icons/projects.svg);
+    }
+  }
+  &__revenue {
+    &::before {
+      background-image: url(../images/icons/revenue.svg);
+      }
+  }
+  &__awards {
+    &::before {
+      background-image: url(../images/icons/awards.svg);
+      }
+  }
+}
+
+.statistics {
+  padding: 86px 0 82px;
+  background-color: #fcd7b6;
+  &__items {
+    display: flex;
+    justify-content: space-around;     
+  }
+  &__item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    
+  }
+  &__icons {
+    height: 68px;
+    margin-bottom: 14px;
+    position: relative;    
+    &::after {
+      content: '';
+      position: absolute;
+      background-color: $neptun;
+      border-radius: 50%;
+      width: 35px;
+      height: 35px;
+      top: 22px;
+      left: 35px;
+      opacity: 0.98;
+    }
+  }
+  &__item-img {
+    position: relative;
+    z-index: 999;
+  }
+  &__item-text {
+    margin-top: 24px;
+    @extend %dmsans-700;
+    font-size: 18px;
+    color: $accent;
+  }
+}
+
+.team {
+  &__inner {
+    padding: 120px 0 494px;
+    display: flex;    
+  }
+  &__content {
+    max-width: 402px;
+    width: 100%;
+  }
+  &__content-title {
+    text-align-last: left;
+    margin-bottom: 22px;
+  }
+  &__content-text {
+    font-size: 16px;
+    line-height: 30px;
+    color: $accent;
+    width: 308px;
+    margin-bottom: 36px;
+  }
+  &__content-link {
+    display: block;
+    background-color: $neptun;
+    border-radius: 5px;
+    width: 170px;
+    height: 50px;
+    @extend %poppins-600;
+    font-size: 15px;
+    color: #fff;
+    padding: 14px 34px 18px 17px;
+    position: relative;
+    &::after {
+      content: '';
+      position: absolute;
+      background-image: url(../images/icons/team-btn-arrow.svg);
+      top: 20px;
+      right: 25px;
+      width: 15px;
+      height: 11px;
+    }
+  }
+  &__items {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 36px 30px;
+    height: 320px;
+  }
+  &__item {
+    transition: transform .2s;
+    &:hover {
+      transform: scale(1.05);
+    }
+  }
+  &__item-img {
+    object-fit: cover;
+  }
+  &__item-content {
+    display: flex;
+    justify-content: space-between;
+    max-width: 326px;
+    width: 100%;
+    background-color: #fff;
+    padding: 28px 14px 26px 26px;
+    box-shadow: 0px 6px 57px 0px rgba(37, 37, 37, 0.05);
+    margin-top: -48px;
+    position: relative;
+    z-index: 888;
+  }
+  &__item-title {
+    @extend %dmsans-700;
+    font-size: 22px;
+    line-height: 26px;
+    color: #436372;
+    margin-bottom: 10px;
+  }
+  &__item-text {
+    font-size: 16px;
+    color: #565872;
+  }
+  &__item-links {
+    display: flex;
+    margin-top: 10px;    
+  }
+  &__item-link {
+    margin-right: 6px;
+    width: 42px;
+    height: 42px;
+    background-color: #f6f6f6;
+    border-radius: 50%;
+  }
+  &__link-instagram {
+    padding: 13px;
+  }
+  &__link-google {
+    padding: 13px 9px;
   }
 }
 
@@ -775,7 +1031,7 @@
   }  
   &__form-btn {
     border: none;
-    background-color: #a3bbc8;
+    background-color: $neptun;
     @extend %dmsans-400;
     font-size: 14px;
     line-height: 21px;

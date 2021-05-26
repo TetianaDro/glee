@@ -2,6 +2,7 @@ $accent: #243f4d;
 $title: #191919;
 $default: #7b7b7b;
 $bg: #fef7f0;
+$neptun: #a3bbc8;
 
 
 %dmsans-700 {
@@ -18,6 +19,14 @@ $bg: #fef7f0;
 }
 %poppins-700 {
   font-family: 'Poppins-Bold', sans-serif;
+  font-weight: 700;
+}
+%poppins-600 {
+  font-family: 'Poppins-SemiBold', sans-serif;
+  font-weight: 600;
+}
+%rubik-700 {
+  font-family: 'Rubik-Bold', sans-serif;
   font-weight: 700;
 }
 %rubik-500 {
