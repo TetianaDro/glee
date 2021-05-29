@@ -905,7 +905,7 @@
   &__filters {
     min-width: 272px;
     margin-bottom: 60px;
-    margin-right: 30px;
+    margin-right: 28px;
   }
 }
 
@@ -1014,8 +1014,7 @@
   display: none;
 }
 
-.filter-brand { 
-  
+.filter-brand {   
   &__label {
     display: block;
     cursor: pointer;
@@ -1075,7 +1074,101 @@
       margin-bottom: 40px;
     }    
   }
+  &__item {
+    display: flex;
+    margin-bottom: 36px;
+       
+  }
+  &__image {
+    min-width: 370px;    
+    height: 500px;    
+    border: 1px solid #f2f2f2;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    margin-right: 56px;
+    position: relative;    
+  }
+  &__img {
+    width: 85%;
+  }
+  &__inner {
+    max-width: 590px;
+    display: block;
+    padding-top: 98px;
+  }
+  &__title {
+    font-size: 40px;
+    color: #333;
+    margin-bottom: 25px;
+    line-height: 0.661;
+  }
+  &__star {
+    margin-bottom: 41px;
+  }
+  &__price {
+    display: block;
+    font-size: 30px;
+    color: #333;
+    margin-bottom: 28px;
+  }
+  &__text {
+    font-size: 16px;
+    line-height: 30px;
+    color: $accent;
+    margin-bottom: 32px;
+  }
+  &__buttons {
+    display: inline-block;    
+  }
+  &__btn {
+    display: inline-block;
+    border: none;
+    padding: 8px 0 0 0;
+    width: 50px;
+    height: 50px;
+    background-color: #fff;
+    box-shadow: 0px 6px 47px 3px rgba(37, 37, 37, 0.05);
+    margin-right: 10px;
+    cursor: pointer;      
+  }
+  &__btn--active {
+    background-color: $neptun;
+    cursor: pointer;
+    position: relative;
+    path {
+      fill: #fff;
+    }     
+  } 
+  &__cart {
+    text-transform: uppercase;
+    color: #000;
+    font-size: 15px;
+  }
+  // &__cart { 
+  //   display: inline-block;
+  //   position: absolute;
+  //   border: none;
+  //   padding: 13px 0;
+  //   background-color: $neptun;
+  //   border-radius: 5px;
+  //   width: 208px; 
+  //   text-transform: uppercase;
+  //   color: #fff;
+  //   font-size: 15px;    
+  //   cursor: pointer;
+  //   transition: all .3s;
+  //   transform: translateX(300%);
+  // }   
 }
+
+
+
+
+
+
+
 
 
 .footer-top {

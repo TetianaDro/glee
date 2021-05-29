@@ -1,10 +1,17 @@
 $(function(){
 
-  $(".star").rateYo({
+  $(".filter-star").rateYo({
     starWidth: "12px",
     ratedFill: "#ffcc00",
     normalFill: "#d6d6d6",
     spacing: "6px"
+  });
+
+  $(".shop-content__star").rateYo({
+    starWidth: "18px",
+    ratedFill: "#ffcc00",
+    normalFill: "#d6d6d6",
+    spacing: "12px"
   });
 
   $('.filter-price__input').ionRangeSlider({
