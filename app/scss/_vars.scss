@@ -3,7 +3,8 @@ $title: #191919;
 $default: #7b7b7b;
 $bg: #fef7f0;
 $neptun: #a3bbc8;
-
+$grey: #333;
+$blue: #436372;
 
 %dmsans-700 {
   font-family: 'DMSans-Bold',
@@ -67,6 +68,12 @@ $neptun: #a3bbc8;
   overflow: hidden;
   clip: rect(0 0 0 0);
   position: absolute;
+}
+
+%text {
+  font-size: 16px;
+  line-height: 30px;
+  color: #243f4d;
 }
 
 @function max($numbers...) {

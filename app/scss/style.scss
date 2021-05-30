@@ -24,7 +24,7 @@
     @extend %rubik-500;
     font-size: 15px;
     line-height: 34px;
-    color: #436372;
+    color: $blue;
   }
 }
 
@@ -100,7 +100,7 @@
   &__text {
     font-size: 18px;
     line-height: 30px;
-    color: #436372;
+    color: $blue;
     width: 370px;
     margin-bottom: 36px;
   }
@@ -347,16 +347,14 @@
     margin-bottom: 9px;
   }
   &__content-text {
-    font-size: 16px;
-    line-height: 30px;
-    color: $accent;
+    @extend %text;
     margin-bottom: 46px;
   }
   &__content-link {    
     @extend %rubik-500;
     font-size: 15px;
     line-height: 1;
-    color: #436372;
+    color: $blue;
     border: 1px solid #b3b7b5;
     border-radius: 5px;
     padding: 20px 0 21px 17px;    
@@ -561,7 +559,7 @@
   &__label {
     display: block;
     margin-bottom: 15px;
-    color: #436372;
+    color: $blue;
     line-height: 40px;
   }
   &__form-label {
@@ -603,7 +601,7 @@
     margin-bottom: 26px;
   }
   &__link {
-    color: #436372;    
+    color: $blue;
   }
   &__bottom {
     text-align: center;
@@ -627,9 +625,7 @@
   }
   &__text,
   &__item {
-    font-size: 16px;
-    line-height: 30px;
-    color: $accent;
+    @extend %text;
   }
   &__text {
     margin-bottom: 58px;
@@ -675,12 +671,10 @@
     flex-direction: column;           
   }
   &__subtitle-text {
-    font-size: 16px;
-    line-height: 30px;    
+    @extend %text;
   }  
   &__text {
-    font-size: 16px;
-    line-height: 30px;
+    @extend %text;
     padding: 42px 0 62px;    
     position: relative;
     &::after {
@@ -812,9 +806,7 @@
     margin-bottom: 22px;
   }
   &__content-text {
-    font-size: 16px;
-    line-height: 30px;
-    color: $accent;
+    @extend %text;
     width: 308px;
     margin-bottom: 36px;
   }
@@ -870,7 +862,7 @@
     @extend %dmsans-700;
     font-size: 22px;
     line-height: 26px;
-    color: #436372;
+    color: $blue;
     margin-bottom: 10px;
   }
   &__item-text {
@@ -895,7 +887,6 @@
     padding: 13px 9px;
   }
 }
-
 
 .shop-page {
   padding: 116px 0 118px;
@@ -1033,7 +1024,6 @@
   }
 }
 
-
 .filter-recent {
   &__wrapper {
     display: flex;
@@ -1055,17 +1045,17 @@
     padding-left: 19px;
   }
   &__title {
-    color: #333;
-    line-height: 16px;
+    font-size: 14px;
+    color: $grey;
   }
   &__price {
     font-size: 15px;
-    color: #333;
+    color: $grey;
   }
 }
 
 .shop-content {
-  &__inner {
+  &__grid {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
@@ -1100,7 +1090,7 @@
   }
   &__title {
     font-size: 40px;
-    color: #333;
+    color: $grey;
     margin-bottom: 25px;
     line-height: 0.661;
   }
@@ -1110,13 +1100,11 @@
   &__price {
     display: block;
     font-size: 30px;
-    color: #333;
+    color: $grey;
     margin-bottom: 28px;
   }
   &__text {
-    font-size: 16px;
-    line-height: 30px;
-    color: $accent;
+    @extend %text;
     margin-bottom: 32px;
   }
   &__buttons {
@@ -1145,30 +1133,166 @@
     text-transform: uppercase;
     color: #000;
     font-size: 15px;
-  }
-  // &__cart { 
-  //   display: inline-block;
-  //   position: absolute;
-  //   border: none;
-  //   padding: 13px 0;
-  //   background-color: $neptun;
-  //   border-radius: 5px;
-  //   width: 208px; 
-  //   text-transform: uppercase;
-  //   color: #fff;
-  //   font-size: 15px;    
-  //   cursor: pointer;
-  //   transition: all .3s;
-  //   transform: translateX(300%);
-  // }   
+  }    
 }
 
+.product-slider {
+  display: flex;
+  margin-right: 70px;
+  &__nav {
+    width: 138px;
+    margin-right: 25px;
+  }
+  &__nav-item {
+    margin-bottom: 14px;    
+    width: 138px;
+    height: 160px;
+    cursor: pointer;
+    img {
+      width: 134px;
+      height: 156px;
+      object-fit: cover;
+    }
+  }
+  &__for {
+    width: 386px;
+    img {
+      width: 382px;
+      height: 526px;
+      object-fit: cover;
+    }
+  }
+  &__nav-item,
+  &__for-item {
+    border: 2px solid #f2f2f2;
+  }
+}
 
+.product-one {
+  margin-bottom: 100px;
+  &__item {
+    display: flex;
+    align-items: center;
+    padding-top: 120px;
+  }
+  &__title {
+    font-size: 40px;
+    color: $grey;
+    margin-bottom: 28px;
+  }
+  &__star {
+    margin-bottom: 37px;  
+  }
+  &__price {
+    display: block;
+    font-size: 30px;
+    color: $grey;
+    margin-bottom: 30px;
+  }
+  &__text {
+    @extend %text;
+    margin-bottom: 25px;
+  } 
+  &__item-title,
+  &__item-text {
+    @extend %text;
+  }
+  &__btn { 
+    display: inline-block;
+    border: none;
+    padding: 14px 0;
+    background-color: $neptun;
+    border-radius: 5px;
+    width: 208px; 
+    text-transform: uppercase;
+    color: #fff;
+    font-size: 15px;    
+    cursor: pointer;
+    margin-bottom: 53px;
+  }  
+}
 
+.product-info {
+  &__item {
+    display: flex;
+  }
+  &__item-title {
+    padding-right: 5px;
+  }
+  &__item-title,
+  &__item-text {
+    @extend %text;
+  }
+}
 
+.jq-number {
+  padding: 0 49px;
+  display: inline-flex;
+  margin-right: 15px;
+}
+.jq-number__field {
+  width: 50px;
+  height: 50px;
+  border: 1px solid $neptun;
+  border-bottom-color: $neptun;
+  border-radius: 0;  
+  box-shadow: none;
+}
+.jq-number__field input {
+  width: 50px;
+  height: 50px;
+  padding: 8px 8px;  
+  @extend %rubik-400;
+  font-size: 15px;
+  color: $grey;
+  text-align: center;
+}
+.jq-number__spin {
+  left: 0;
+  height: 50px;
+  width: 50px;
+  border: 1px solid $neptun;
+  border-bottom-color: $neptun;
+  border-radius: 0;
+  background: transparent;
+  box-shadow: none;
+  user-select: none;
+  text-shadow: none;
+  cursor: pointer; 
+}
+.jq-number__spin.minus {
+  top: auto;
+  bottom: 0;
+}
 
-
-
+.jq-number__spin.plus {
+  right: 0;
+  left: auto;
+}
+.jq-number__spin:before {
+  content: '';
+  position: absolute;
+  top: 24px;
+  left: 19px;
+  width: 12px;
+  height: 2px;
+  border: none;
+  background: #666;
+}
+.jq-number__spin.plus:after {
+  top: 19px;
+  left: 24px;
+  width: 2px;
+  height: 12px;
+  border: none;
+  background: #666;
+}
+.jq-number__spin.minus:after {
+  display: none;
+}
+.jq-number__spin:hover { 
+  background: transparent;
+}
 
 
 .footer-top {
@@ -1255,5 +1379,10 @@
     }
   }    
 }
+
+
+
+
+
 
 @import 'media';
