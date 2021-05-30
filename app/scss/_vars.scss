@@ -2,29 +2,76 @@ $accent: #243f4d;
 $title: #191919;
 $default: #7b7b7b;
 $bg: #fef7f0;
+$neptun: #a3bbc8;
 
 
 %dmsans-700 {
-  font-family: 'DMSans-Bold', sans-serif;
+  font-family: 'DMSans-Bold',
+  sans-serif;
   font-weight: 700;
 }
 %dmsans-500 {
-  font-family: 'DMSans-Medium', sans-serif;
+  font-family: 'DMSans-Medium',
+  sans-serif;
   font-weight: 500;
 }
 %dmsans-400 {
-  font-family: 'DMSans-Regular', sans-serif;
+  font-family: 'DMSans-Regular',
+  sans-serif;
   font-weight: 400;
 }
 %poppins-700 {
   font-family: 'Poppins-Bold', sans-serif;
   font-weight: 700;
 }
+%poppins-600 {
+  font-family: 'Poppins-SemiBold',
+  sans-serif;
+  font-weight: 600;
+}
+%rubik-700 {
+  font-family: 'Rubik-Bold',
+  sans-serif;
+  font-weight: 700;
+}
 %rubik-500 {
-  font-family: 'Rubik-Medium', sans-serif;
+  font-family: 'Rubik-Medium',
+  sans-serif;
   font-weight: 500;
 }
 %rubik-400 {
-  font-family: 'Rubik-Regular', sans-serif;
+  font-family: 'Rubik-Regular',
+  sans-serif;
   font-weight: 400;
+}
+%rubik-300 {
+  font-family: 'Rubik-Light',
+  sans-serif;
+  font-weight: 300;
+}
+
+%menu-btn {
+  background-color: transparent;
+  border: none;
+  @extend %dmsans-700;
+  font-size: 16px;
+  line-height: 19px;
+  color: #8b8b8b;
+  padding: 0;
+  cursor: pointer;
+}
+
+%checkbox-hidden {
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  position: absolute;
+}
+
+@function max($numbers...) {
+  @return m#{a}x(#{$numbers});
+}
+@function min($numbers...) {
+  @return m#{i}n(#{$numbers});
 }
