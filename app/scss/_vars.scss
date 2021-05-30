@@ -69,6 +69,12 @@ $neptun: #a3bbc8;
   position: absolute;
 }
 
+%text {
+  font-size: 16px;
+  line-height: 30px;
+  color: #243f4d;
+}
+
 @function max($numbers...) {
   @return m#{a}x(#{$numbers});
 }
