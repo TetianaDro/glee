@@ -24,7 +24,7 @@
     @extend %rubik-500;
     font-size: 15px;
     line-height: 34px;
-    color: #436372;
+    color: $blue;
   }
 }
 
@@ -100,7 +100,7 @@
   &__text {
     font-size: 18px;
     line-height: 30px;
-    color: #436372;
+    color: $blue;
     width: 370px;
     margin-bottom: 36px;
   }
@@ -354,7 +354,7 @@
     @extend %rubik-500;
     font-size: 15px;
     line-height: 1;
-    color: #436372;
+    color: $blue;
     border: 1px solid #b3b7b5;
     border-radius: 5px;
     padding: 20px 0 21px 17px;    
@@ -559,7 +559,7 @@
   &__label {
     display: block;
     margin-bottom: 15px;
-    color: #436372;
+    color: $blue;
     line-height: 40px;
   }
   &__form-label {
@@ -601,7 +601,7 @@
     margin-bottom: 26px;
   }
   &__link {
-    color: #436372;    
+    color: $blue;
   }
   &__bottom {
     text-align: center;
@@ -862,7 +862,7 @@
     @extend %dmsans-700;
     font-size: 22px;
     line-height: 26px;
-    color: #436372;
+    color: $blue;
     margin-bottom: 10px;
   }
   &__item-text {
@@ -887,7 +887,6 @@
     padding: 13px 9px;
   }
 }
-
 
 .shop-page {
   padding: 116px 0 118px;
@@ -1025,7 +1024,6 @@
   }
 }
 
-
 .filter-recent {
   &__wrapper {
     display: flex;
@@ -1047,17 +1045,17 @@
     padding-left: 19px;
   }
   &__title {
-    color: #333;
-    line-height: 16px;
+    font-size: 14px;
+    color: $grey;
   }
   &__price {
     font-size: 15px;
-    color: #333;
+    color: $grey;
   }
 }
 
 .shop-content {
-  &__inner {
+  &__grid {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
@@ -1092,7 +1090,7 @@
   }
   &__title {
     font-size: 40px;
-    color: #333;
+    color: $grey;
     margin-bottom: 25px;
     line-height: 0.661;
   }
@@ -1102,7 +1100,7 @@
   &__price {
     display: block;
     font-size: 30px;
-    color: #333;
+    color: $grey;
     margin-bottom: 28px;
   }
   &__text {
@@ -1170,7 +1168,6 @@
   }
 }
 
-
 .product-one {
   margin-bottom: 100px;
   &__item {
@@ -1180,7 +1177,7 @@
   }
   &__title {
     font-size: 40px;
-    color: #333;
+    color: $grey;
     margin-bottom: 28px;
   }
   &__star {
@@ -1189,7 +1186,7 @@
   &__price {
     display: block;
     font-size: 30px;
-    color: #333;
+    color: $grey;
     margin-bottom: 30px;
   }
   &__text {
@@ -1233,7 +1230,6 @@
   display: inline-flex;
   margin-right: 15px;
 }
-
 .jq-number__field {
   width: 50px;
   height: 50px;
@@ -1242,17 +1238,15 @@
   border-radius: 0;  
   box-shadow: none;
 }
-
 .jq-number__field input {
   width: 50px;
   height: 50px;
   padding: 8px 8px;  
   @extend %rubik-400;
   font-size: 15px;
-  color: #333;
+  color: $grey;
   text-align: center;
 }
-
 .jq-number__spin {
   left: 0;
   height: 50px;
@@ -1266,7 +1260,6 @@
   text-shadow: none;
   cursor: pointer; 
 }
-
 .jq-number__spin.minus {
   top: auto;
   bottom: 0;
@@ -1276,7 +1269,6 @@
   right: 0;
   left: auto;
 }
-
 .jq-number__spin:before {
   content: '';
   position: absolute;
@@ -1287,7 +1279,6 @@
   border: none;
   background: #666;
 }
-
 .jq-number__spin.plus:after {
   top: 19px;
   left: 24px;
@@ -1296,11 +1287,9 @@
   border: none;
   background: #666;
 }
-
 .jq-number__spin.minus:after {
   display: none;
 }
-
 .jq-number__spin:hover { 
   background: transparent;
 }
