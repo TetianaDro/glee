@@ -12,6 +12,7 @@ $(function(){
 
   $('.product-slider__nav').slick({
     asNavFor: '.product-slider__for',
+    arrows: false,
     slidesToShow: 3,
     slidesToScroll: 1,
     focusOnSelect: true,
