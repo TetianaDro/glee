@@ -560,13 +560,15 @@
   }
   &__form-label {
     margin-bottom: 0;
+    cursor: pointer;
+    padding-left: 25px;
   }
   &__input {
     display: block;
     width: 100%;
     border: 2px solid #f6f6f6;    
     height: 58px;
-    padding: 0 15px;
+    padding: 0 15px;    
   }
   &__btn {
     color: #fffefe;
@@ -601,7 +603,26 @@
   }
   &__bottom {
     text-align: center;
-  }  
+  } 
+  &__form-input {
+    @extend %checkbox-hidden;
+    &:checked + .modal__form-checkbox {
+      background-image: url(../images/icons/check-solid.svg);
+      background-repeat: no-repeat;
+      background-position: right;    
+    }
+  }
+  &__form-checkbox {
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    border-radius: 2px;
+    margin-left: -25px;
+    margin-top: 12px;
+    background-color: #ebebeb; 
+  }
+  
+
 }
 
 .terms {
@@ -947,6 +968,7 @@
       width: 5px;
       height: 10px;
       background-image: url(../images/icons/angle.svg);
+      background-repeat: no-repeat;
       top: 18px;
       right: 23px;
     }
@@ -996,6 +1018,7 @@
   width: 15px;
   height: 15px;
   background-color: $neptun;
+  cursor: pointer;
 }
 .irs--flat .irs-handle>i:first-child {
   display: none;
@@ -1346,6 +1369,9 @@
     border-radius: 5px;
     background-color: #fff;
     cursor: pointer;
+    &:hover {
+      border-color: $neptun;
+    }
     img {
       margin-left: 5px;
     }

@@ -10,6 +10,11 @@ $(function(){
 
   });
 
+  $('.shop-content__btn').on('click',function(){
+      $('.shop-content__btn--active').removeClass('shop-content__btn--active');
+      $(this).addClass('shop-content__btn--active');
+  });
+
   $('.product-slider__nav').slick({
     asNavFor: '.product-slider__for',
     arrows: false,
