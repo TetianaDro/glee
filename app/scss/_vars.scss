@@ -76,6 +76,22 @@ $blue: #436372;
   color: #243f4d;
 }
 
+%btn-view {
+   @extend %rubik-500;
+   font-size: 15px;
+   line-height: 1;
+   color: $blue;
+   border: 1px solid #b3b7b5;
+   border-radius: 5px;
+   padding: 20px 0 21px 17px;
+   width: 180px;
+   &::after {
+     content: url('../images/icons/arrow-2.svg');
+     padding-left: 42px;
+     padding-right: 19px;
+   }
+}
+
 @function max($numbers...) {
   @return m#{a}x(#{$numbers});
 }
