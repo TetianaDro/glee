@@ -1,0 +1,114 @@
+.info {
+  margin-bottom: 65px;
+
+  &__wrapper {
+    display: flex;
+  }
+
+  &__item {
+    background-color: $bg;
+    height: 170px;
+    width: 100%;
+  }
+
+  &__item-support {
+    max-width: 568px;
+    padding-top: 46px;
+  }
+
+  &__item-delivery {
+    max-width: 604px;
+    border: 1px solid #e8e4df;
+    border-top: none;
+    border-bottom: none;
+    padding-top: 56px;
+  }
+
+  &__item-payment {
+    max-width: 596px;
+    padding-top: 44px;
+  }
+
+  &__box-support,
+  &__box-delivery,
+  &__box-payment {
+    position: relative;
+
+    &::after {
+      content: '';
+      position: absolute;
+      width: 20px;
+      height: 20px;
+      background-color: $neptun;
+      opacity: 0.341;
+      border-radius: 50%;
+      top: 33px;
+      left: -44px;
+    }
+
+    &::before {
+      content: '';
+      position: absolute;
+      width: 50px;
+      height: 50px;
+      background-image: url(../images/icons/support.svg);
+      background-repeat: no-repeat;
+      top: -1px;
+      left: -75px;
+    }
+  }
+
+  &__box-support {
+    margin-left: 224px;
+  }
+
+  &__box-delivery {
+    margin-left: 239px;
+
+    &::after {
+      top: 18px;
+      left: -46px;
+    }
+
+    &::before {
+      background-image: url(../images/icons/delivery-truck.svg);
+      width: 50px;
+      height: 30px;
+      top: -1px;
+      left: -78px;
+    }
+  }
+
+  &__box-payment {
+    margin-left: 239px;
+    width: 215px;
+
+    &::after {
+      top: 35px;
+      left: -53px;
+    }
+
+    &::before {
+      background-image: url(../images/icons/credit-card.svg);
+      width: 49px;
+      height: 44px;
+      top: 1px;
+      left: -87px;
+    }
+  }
+
+  &__item-title {
+    @extend %dmsans-700;
+    font-size: 18px;
+    line-height: 1;
+    color: #414141;
+    margin-bottom: 5px;
+  }
+
+  &__item-text {
+    @extend %dmsans-400;
+    font-size: 16px;
+    line-height: 30px;
+    color: #585858;
+  }
+}

@@ -1,0 +1,54 @@
+.new-design {
+  margin: 102px 0 120px;
+
+  &__filter-btn {
+    margin: 24px 0 73px;
+    text-align: center;
+  }
+
+  &__btn {
+    @extend %menu-btn;
+  }
+
+  &__btn+.new-design__btn {
+    margin-left: 27px;
+  }
+
+  &__inner {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 35px 30px;
+  }
+
+  &__item {
+    height: 246px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: right bottom;
+    object-fit: cover;
+    transition: transform .2s;
+
+    &:hover {
+      transform: scale(1.05);
+    }
+  }
+
+  &__content {
+    padding: 38px 0 0 38px;
+  }
+
+  &__content-title {
+    @extend %dmsans-700;
+    font-size: 20px;
+    line-height: 24px;
+    color: $title;
+    width: 176px;
+    margin-bottom: 10px;
+  }
+
+  &__content-text {
+    @extend %dmsans-700;
+    font-size: 16px;
+    color: $neptun;
+  }
+}

@@ -1,0 +1,17 @@
+.video {
+  &__popup {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    height: 500px;
+    position: relative;
+    margin-bottom: 113px;
+  }
+
+  &__play-btn {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    position: absolute;
+  }
+}

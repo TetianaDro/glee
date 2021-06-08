@@ -1,0 +1,93 @@
+.top-slider {
+  &__inner {
+    background-color: #fcd7b6;
+  }
+
+  &__item {
+    display: flex !important;
+    justify-content: space-between;
+    margin: 0 auto 89px;
+    max-width: 1173px;
+  }
+
+  &__content {
+    margin-top: 218px;
+  }
+
+  &__title {
+    @extend %rubik-500;
+    font-size: 72px;
+    line-height: 70px;
+    color: $accent;
+    width: 500px;
+    margin-bottom: 25px;
+    text-transform: uppercase;
+    letter-spacing: 0.1px;
+  }
+
+  &__text {
+    font-size: 18px;
+    line-height: 30px;
+    letter-spacing: 4px;
+    color: $blue;
+    width: 370px;
+    margin-bottom: 36px;
+    letter-spacing: 0.1px;
+    margin-left: 5px;
+  }
+
+  &__link {
+    margin-left: 5px;
+    padding: 24px 0 21px 27px;
+    background-color: $neptun;
+    @extend %rubik-500;
+    font-size: 15px;
+    line-height: 15px;
+    color: #fff;
+    display: inline-block;
+    margin-bottom: 120px;
+  }
+
+  &__link::after {
+    content: url('../images/icons/arrow.svg');
+    padding-left: 60px;
+    padding-right: 19px;
+  }
+
+  &__img {
+    position: absolute;
+    top: 98px;
+    right: 180px;
+  }
+
+  .slick-dots {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 45px;
+    padding-top: 0;
+    margin-right: 5px;
+
+    li {
+      padding-left: 10px;
+
+      button {
+        padding: 0;
+        width: 30px;
+        height: 29px;
+        border: none;
+        border-radius: 50%;
+        background-color: #fde3cc;
+        @extend %rubik-500;
+        font-size: 10px;
+        color: #667983;
+      }
+
+      &.slick-active {
+        button {
+          background-color: #fff;
+          color: $accent;
+        }
+      }
+    }
+  }
+}
