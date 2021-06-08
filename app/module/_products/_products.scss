@@ -118,3 +118,65 @@
 .mixitup-control-active {
   color: $title;
 }
+
+
+@media (max-width: 1310px) {
+  .products {
+    &__item {
+      height: 355px;
+    }
+  }
+}
+
+@media (max-width: 1200px) {
+  .products {
+    &__item {
+      height: 330px;
+      padding:30px 14px 25px;
+    }
+    &__item-img {
+      max-width: 90%;
+    }
+  }
+}
+
+@media (max-width: 1060px) {
+  .products {
+    &__item {
+      height: 270px;
+      padding: 20px 14px 0px;
+    }
+    &__filter-btn {
+      margin-bottom: 45px;
+    }
+  }
+}
+
+@media (max-width: 935px) {
+  .products {
+    &__inner {
+      grid-template-columns: repeat(3, 1fr);
+      grid-gap: 20px;
+    }    
+  }
+}
+
+@media (max-width: 790px) {
+  .products {
+    &__inner {
+      grid-template-columns: repeat(2, 1fr);
+    }
+    &__item {
+      max-width: 100%;
+    }
+  }
+}
+
+@media (max-width: 570px) {
+  .products {
+    &__inner {
+      grid-template-columns: repeat(1, 1fr);
+    }
+  }
+}
+

@@ -15,3 +15,11 @@
     position: absolute;
   }
 }
+
+@media (max-width: 570px) {
+  .video {
+    &__popup {
+      height: 300px;
+    }
+  }
+}
