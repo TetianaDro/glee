@@ -41,6 +41,7 @@
     padding: 15px;
     background-color: #edf1f4;
     border-radius: 50%;
+    transition: all .3s;
     &:hover {
       background-color: $neptun;
       path {
@@ -78,7 +79,10 @@
     background-color: #fff;
     border-radius: 50%;
     position: absolute;
-  }     
+  }
+  &__img {
+    transition: all .5s;
+  }
 }
 
 .top-slider {  
@@ -313,6 +317,7 @@
     width: 100%;
     height: 380px;
     padding: 30px 0 25px;
+    transition: all .3s;
   } 
   &__item-img {
     object-fit: cover;
@@ -325,7 +330,6 @@
     left: 0;
     opacity: 0;
     background-color: transparent;
-    transition: all .3s;
   }
   &__overlay-links {
     position: absolute;
@@ -579,6 +583,7 @@
   &__date,
   &__author {
     font-size: 12px;
+    line-height: 24px;
     color: #222933;
     text-transform: uppercase;
     padding-left: 20px;
@@ -616,7 +621,7 @@
 
 .top-container {
   background-color: #edf1f4;
-  padding: 33px 0;
+  padding: 37px 0 30px;
   text-align: center;
   &__title {
     @extend %rubik-300;
@@ -654,7 +659,7 @@
     color: #fffefe;
     border: none;
     background-color: $neptun;
-    margin: 26px 0 24px;  
+    margin: 26px 0 22px;  
     cursor: pointer;  
   }
   &__btn,
@@ -668,7 +673,9 @@
     display: block;
     color: $accent;
     border: 2px solid $neptun;
-    margin-top: 22px;
+    margin-top: 21px;
+    padding: 19px 0;
+
   }
   &__form-bottom {
     display: flex;
@@ -676,7 +683,7 @@
     align-items: center;
     padding-bottom: 18px;
     border-bottom: 2px solid #f6f6f6;
-    margin-bottom: 26px;
+    margin-bottom: 27px;
   }
   &__link {
     color: $blue;
@@ -705,7 +712,7 @@
 
 .terms {
   max-width: 1230px;
-  margin: 110px auto; 
+  margin: 109px auto; 
   padding-left: 30px; 
   &__title {
     @extend %rubik-500;
@@ -714,16 +721,25 @@
     color: $accent;
     margin-bottom: 17px;
   }  
+  &__title--second {
+    margin-bottom: 8px;
+  }
+  &__title--third {
+    margin-bottom: 10px;
+  }
   &__list {
     margin: 0 0 58px 32px;        
     list-style-type: decimal-leading-zero;    
+    &:nth-child(n+9) {
+      list-style-type: decimal;
+    }
   }
   &__text,
   &__item {
     @extend %text;
   }
   &__text {
-    margin-bottom: 58px;
+    margin-bottom: 55px;
   }
   &__item {
     margin-bottom: 20px;
@@ -735,7 +751,8 @@
   &__title {
     @extend %dmsans-700;
     font-size: 36px;
-    color: $accent;    
+    color: $accent; 
+    line-height: 29px;   
   }
 }
 
@@ -748,7 +765,7 @@
     max-width: 574px;  
   }
   &__content {
-    padding: 100px 0 74px 50px;
+    padding: 102px 0 80px 46px;
   }
   &__subtitle {
     display: flex;
@@ -759,7 +776,7 @@
     font-size: 140px;
     line-height: 68px;
     color: $neptun;
-    margin-right: 22px;
+    margin-right: 25px;
   }
   &__items-text {
     display: flex;
@@ -770,8 +787,9 @@
   }  
   &__text {
     @extend %text;
-    padding: 42px 0 62px;    
+    padding: 39px 30px 62px 0;
     position: relative;
+    letter-spacing: 0.01px;
     &::after {
       content: '';
       position: absolute;
@@ -856,8 +874,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: space-around;
-    
+    justify-content: space-around;       
   }
   &__icons {
     height: 68px;
@@ -889,7 +906,7 @@
 
 .team {
   &__inner {
-    padding: 120px 0 494px;
+    padding: 117px 0 494px;
     display: flex;    
   }
   &__content {
@@ -989,7 +1006,7 @@
     display: flex;
   }
   &__filters {
-    min-width: 272px;
+    min-width: 268px;
     margin-bottom: 60px;
     margin-right: 28px;
   }
@@ -997,10 +1014,11 @@
 
 .filter {  
   &__item {
-    padding-bottom: 48px;
+    padding-bottom: 49px;
   }
   &__item-title {
     padding-bottom: 23px;
+    margin-left: -2px;
   }
   &__title {    
     @extend %dmsans-700;
@@ -1102,7 +1120,7 @@
   display: none;
 }
 
-.filter-brand {   
+.filter-brand {
   &__label {
     display: block;
     cursor: pointer;
@@ -1156,15 +1174,14 @@
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
-    margin-bottom: 70px;
+    margin-bottom: 73px;
     .products__item {
       margin-bottom: 40px;
     }    
   }
   &__item {
     display: flex;
-    margin-bottom: 36px;
-       
+    margin-bottom: 45px;       
   }
   &__image {
     min-width: 370px;    
@@ -1199,10 +1216,12 @@
     font-size: 30px;
     color: $grey;
     margin-bottom: 28px;
+    margin-left: 6px;
   }
   &__text {
     @extend %text;
     margin-bottom: 32px;
+    margin-left: 8px;
   }
   &__buttons {
     display: inline-block;    
@@ -1235,7 +1254,7 @@
 
 .product-slider {
   display: flex;
-  margin-right: 70px;
+  margin-right: 72px;
   &__nav {
     width: 138px;
     margin-right: 25px;
@@ -1276,15 +1295,18 @@
     font-size: 40px;
     color: $grey;
     margin-bottom: 28px;
+    margin-left: -3px;
   }
   &__star {
-    margin-bottom: 37px;  
+    margin-bottom: 39px; 
+    margin-left: -9px;     
   }
   &__price {
     display: block;
     font-size: 30px;
     color: $grey;
     margin-bottom: 30px;
+    margin-left: -2px;
   }
   &__text {
     @extend %text;
@@ -1303,7 +1325,8 @@
     width: 208px; 
     text-transform: uppercase;
     color: #fff;
-    font-size: 15px;    
+    font-size: 15px;  
+    letter-spacing: 0.75px;  
     cursor: pointer;
     margin-bottom: 51px;
   }  
@@ -1325,7 +1348,7 @@
 .jq-number {
   padding: 0 49px;
   display: inline-flex;
-  margin-right: 15px;
+  margin-right: 11px;
 }
 .jq-number__field {
   width: 50px;
@@ -1408,7 +1431,7 @@
     height: 53px;
     margin-right: 10px;
     text-align: center;
-    padding: 14px 0;
+    padding: 17px 0;
   }
   &__top-item--active {
     color: #fff;
@@ -1437,12 +1460,12 @@
   &__arrow {
     display: flex;
     justify-content: flex-end;
-    margin-top: -40px;
+    margin-top: -42px;
   }
   .slick-arrow {
     display: inline-block;    
-    width: 46px;
-    height: 46px;
+    width: 50px;
+    height: 50px;
     border: 2px solid #edf1f4;
     border-radius: 5px;
     background-color: #fff;
@@ -1455,7 +1478,7 @@
     }
   }
   .slick-prev {
-    margin-right: 20px;
+    margin-right: 21px;
   }   
   .products__item {
     display: flex !important;       
@@ -1495,7 +1518,7 @@
 
   &__img-link {
     display: block;
-    margin-bottom: 46px;
+    margin-bottom: 48px;
   }
 
   &__img {
@@ -1509,7 +1532,7 @@
     bottom: 0;
     left: 0;
     background-color: $neptun;
-    padding: 22px 25px;
+    padding: 24px 25px;
   }
 
   &__item-title {
@@ -1523,18 +1546,19 @@
 
   &__item-text {
     @extend %text;
-    margin-bottom: 30px;
+    margin-bottom: 34px;
   }
 
   &__item-btn {
     display: block;
     border-radius: 0;
     @extend %btn-view;
+    padding-left: 20px;
   }
 
   &__pagination {
     justify-content: start;
-    margin-top: 25px;
+    margin-top: 28px;
   }
 }
 
@@ -1632,11 +1656,13 @@
     margin-right: 70px;
   }
   &__content {
-    padding-bottom: 25px;
+    padding-bottom: 34px;
     h3 {
       font-size: 36px;
       color: $grey;
-      padding: 45px 0 24px;
+      padding: 41px 0 24px;
+      letter-spacing: 0.2px;
+      margin-left: -3px;
     }
     h5 {
       @extend %rubik-500;
@@ -1650,17 +1676,17 @@
       margin-bottom: 35px;
     }
     blockquote {
-      padding: 16px 41px 26px 38px;
+      padding: 16px 41px 26px 33px;
       background-color: #edf1f4;
       margin-bottom: 47px;
       border-left: 7px solid $neptun;     
       p {
-        margin-bottom: 12px;        
+        margin-bottom: 16px;      
       }
       span {
         display: block;
         position: relative;
-        padding-left: 43px;
+        padding-left: 46px;
         @extend %text;
         line-height: 1;
         &::before {
@@ -1669,7 +1695,7 @@
           width: 20px;
           height: 3px;
           background-color: $neptun;
-          left: 0;
+          left: 3px;
           bottom: 4px;
         }
       }     
@@ -1677,13 +1703,13 @@
     h4 {
       @extend %rubik-500;
       font-size: 18px;
-      margin-bottom: 15px;
+      margin-bottom: 13px;
       color: $accent;
-      padding-top: 28px;
+      padding-top: 23px;
     } 
     .blog__img-left {
       display: block;
-      margin: 0 28px 10px 0;
+      margin: -3px 30px 10px 0;
       float: left;
     }
     .blog__img-right {
@@ -1696,7 +1722,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 24px 18px 26px 0;
+    padding: 24px 19px 24px 0px;
     border: 2px solid #ebebeb;
     border-right: none;
     border-left: none;
@@ -1710,7 +1736,7 @@
     display: block;
     width: 78px;
     height: 78px;
-    margin-right: 28px;
+    margin-right: 27px;
     object-fit: cover;
   }
   &__author-name{
@@ -1746,7 +1772,7 @@
     margin-left: 22px;
   }
   &__comments {
-    margin-bottom: 60px;
+    margin-bottom: 62px;
   }
   &__comments-title {
     @extend %rubik-700;
@@ -1775,12 +1801,13 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-bottom: 12px;
+    margin-top: -3px;
+    margin-bottom: 15px;
   }
   &__comments-name {
     @extend %rubik-700;
     font-size: 16px;
-    line-height: 19px;
+    line-height: 24px;
     color: $blue;
   }
   &__comments-date {
@@ -1790,7 +1817,8 @@
     font-size: 16px;
     line-height: 30px;
     color: #565872;
-    margin-bottom: 15px;
+    margin-bottom: 14px;
+    letter-spacing: 0.08px;
   }
   &__comments-link {
     color:#516278;
@@ -1815,7 +1843,7 @@
     font-size: 24px;
     line-height: 30px;
     color: $blue;
-    margin-bottom: 40px;
+    margin-bottom: 43px;
   }
   &__input-name,
   &__input-email,
@@ -1910,7 +1938,7 @@
   }
   &__items {
     display: flex;
-    margin-bottom: 117px;
+    margin-bottom: 122px;
   }
   &__item {
     width: 33.3333%;
@@ -1937,7 +1965,7 @@
   &__item-title {
     @extend %dmsans-700;
     font-size: 20px;
-    line-height: 26px;
+    line-height: 24px;
     color: #222;
     margin-bottom: 18px;
   }
@@ -1973,7 +2001,7 @@
     font-size: 16px;
     color: #565872;
     text-transform: uppercase;    
-    padding: 13px 20px; 
+    padding: 13px 53px 15px 20px;
     border: none;
     background-color: #fafafa;   
   }
@@ -1986,7 +2014,7 @@
       position: absolute;
       width: 14px;
       height: 14px;
-      top: 20px;
+      top: 21px;
       right: 24px;
       background-image: url(../images/icons/blog-name.svg);
       background-repeat: no-repeat;
@@ -1999,17 +2027,20 @@
     right: 31px;
     background-image: url(../images/icons/blog-email.svg);
   }
-  &__form-textarea::after {
+  &__form-textarea {
+    margin-top: -6px;
+    &::after {
     width: 18px;
     height: 15px;
-    top: 16px;
+    top: 19px;
     right: 31px;
     background-image: url(../images/icons/blog-comment.svg);
+    }
   }
   &__form-input {
     display: flex;    
     justify-content: space-between;
-    margin-bottom: 25px;
+    margin-bottom: 27px;
   }
   &__input-name,
   &__input-email {
@@ -2019,8 +2050,8 @@
     resize: none;
     display: block;
     width: 100%;
-    height: 174px;
-    margin-bottom: 28px;
+    height: 175px;
+    margin-bottom: 30px;
   }
   &__btn {
     padding: 13px 45px;
@@ -2038,6 +2069,7 @@
   width: 500px;
   height: 335px;
 }
+
 
 .footer-top {
   display: flex;
@@ -2121,6 +2153,10 @@
      padding: 10px 19px 10px 14px;
      cursor: pointer;
    }
+}
+
+.footer-top--onpages {
+  padding-top: 83px;
 }
   
 .footer-bottom {
