@@ -1,0 +1,67 @@
+.lamp-card {
+  &__wrapper {
+    display: flex;
+  }
+
+  &__item+.lamp-card__item {
+    margin-left: 30px;
+  }
+
+  &__item {
+    background-color: #feefe2;
+    max-width: 870px;
+    width: 100%;
+    padding: 0 90px 86px;
+  }
+
+  &__inner-first,
+  &__inner-second {
+    display: flex;
+  }
+
+  &__img-first {
+    display: block;
+    margin-top: -100px;
+    margin-left: 46px;
+  }
+
+  &__content-first {
+    margin-left: 18px;
+    margin-top: 95px;
+  }
+
+  &__img-second {
+    display: block;
+    margin-top: -96px;
+    margin-left: 57px;
+  }
+
+  &__content-second {
+    margin-left: 60px;
+    margin-top: 82px;
+  }
+
+  &__title {
+    @extend %dmsans-700;
+    font-size: 26px;
+    line-height: 32px;
+    color: $accent;
+    margin-bottom: 10px;
+  }
+
+  &__title--first {
+    margin-bottom: 17px;
+    letter-spacing: 0.1px;
+  }
+
+  &__content-text {
+    @extend %text;
+    letter-spacing: 0.1px;
+    margin-bottom: 46px;
+  }
+
+  &__content-link {
+    margin-left: 2px;
+    @extend %btn-view;
+  }
+}

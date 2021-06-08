@@ -1,0 +1,112 @@
+@import 'reset';
+@import 'fonts';
+@import 'vars';
+@import '../../node_modules/ion-rangeslider/css/ion.rangeSlider';
+@import '../../node_modules/rateyo/src/jquery.rateyo';
+@import '../../node_modules/jquery-form-styler/dist/jquery.formstyler';
+@import 'global';
+@import '../module/_header/_header';
+@import '../module/_footer/_footer';
+@import '../module/_filter/_filter';
+@import '../module/_clients/_clients';
+
+
+.shop-page {
+  padding: 116px 0 118px;
+
+  &__inner {
+    display: flex;
+  }
+
+  &__filters {
+    min-width: 268px;
+    margin-bottom: 60px;
+    margin-right: 28px;
+  }
+}
+
+.shop-content {
+   &__item {
+    display: flex;
+    margin-bottom: 45px;
+  }
+
+  &__image {
+    min-width: 370px;
+    height: 500px;
+    border: 1px solid #f2f2f2;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    margin-right: 56px;
+    position: relative;
+  }
+
+  &__img {
+    width: 85%;
+  }
+
+  &__inner {
+    max-width: 590px;
+    display: block;
+    padding-top: 98px;
+  }
+
+  &__title {
+    font-size: 40px;
+    color: $grey;
+    margin-bottom: 25px;
+    line-height: 0.661;
+  }
+
+  &__star {
+    margin-bottom: 41px;
+  }
+
+  &__price {
+    display: block;
+    font-size: 30px;
+    color: $grey;
+    margin-bottom: 28px;
+    margin-left: 6px;
+  }
+
+  &__text {
+    @extend %text;
+    margin-bottom: 32px;
+    margin-left: 8px;
+  }
+
+  &__buttons {
+    display: inline-block;
+  }
+
+  &__btn {
+    display: inline-block;
+    border: none;
+    padding: 8px 0 0 0;
+    width: 50px;
+    height: 50px;
+    background-color: #fff;
+    box-shadow: 0px 6px 47px 3px rgba(37, 37, 37, 0.05);
+    margin-right: 10px;
+    cursor: pointer;
+  }
+
+  &__btn--active {
+    background-color: $neptun;
+    cursor: pointer;
+    position: relative;
+
+    path {
+      fill: #fff;
+    }
+  }
+
+  &__cart {
+    text-transform: uppercase;
+    color: #000;
+    font-size: 15px;
+  }
+}

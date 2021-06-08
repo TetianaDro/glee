@@ -5,73 +5,98 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>GLEE | Product details</title>
-  <link rel="stylesheet" href="css/style.min.css">
+  <link rel="stylesheet" href="css/product-details.min.css">
 </head>
 
 <body>
 
   <header class="header">
-    <div class="container-fluid">
-      <div class="header__inner">
-        <a class="logo" href="#">
-          <img class="logo__img" src="images/logo.png" alt="logo">
-        </a>
-        <nav class="menu">
-          <ul class="menu__list">
-            <li class="menu__list-item">
-              <a class="menu__list-link" hreg="#">Home
-                <span>+</span>
-              </a>
-            </li>
-            <li class="menu__list-item">
-              <a class="menu__list-link" hreg="#">About</a>
-            </li>
-            <li class="menu__list-item">
-              <a class="menu__list-link" hreg="#">Services</a>
-            </li>
-            <li class="menu__list-item">
-              <a class="menu__list-link" hreg="#">Page
-                <span>+</span>
-              </a>
-            </li>
-            <li class="menu__list-item">
-              <a class="menu__list-link" hreg="#">News</a>
-            </li>
-            <li class="menu__list-item">
-              <a class="menu__list-link" hreg="#">Contact</a>
-            </li>
-          </ul>
-        </nav>
-        <div class="user-nav">
-          <div class="user-nav__search">
-            <a class="user-nav__search-link" href="#">
-              <img class="user-nav__search-img" src="images/icons/search.svg" alt="search">
+  <div class="container-fluid">
+    <div class="header__inner">
+      <a class="logo" href="#">
+        <img class="logo__img" src="images/logo.png" alt="logo">
+      </a>
+      <nav class="menu">
+        <button class="menu__btn">
+          <span></span>
+        </button>
+        <ul class="menu__list">
+          <li class="menu__list-item">
+            <a class="menu__list-link" hreg="#">Home
+              <span>+</span>
             </a>
-          </div>
-          <div class="user-nav__purchase">
-
-            <a class="user-nav__purchase-link" href="#">
-              <img class="user-nav__purchase-img" src="images/icons/heart.svg" alt="like">
-              <span class="user-nav__num">o</span>
+          </li>
+          <li class="menu__list-item">
+            <a class="menu__list-link" hreg="#">About</a>
+          </li>
+          <li class="menu__list-item">
+            <a class="menu__list-link" hreg="#">Services</a>
+          </li>
+          <li class="menu__list-item">
+            <a class="menu__list-link" hreg="#">Pages
+              <span>+</span>
             </a>
-
-            <img class="user-nav__purchase-line" src="images/icons/line.svg" alt="line">
-
-            <a class="user-nav__purchase-link" href="#">
-              <img class="user-nav__purchase-img" src="images/icons/cart.svg" alt="cart">
-              <span class="user-nav__num">o</span>
-            </a>
-
-          </div>
-          <div class="user-nav__menu">
-            <a class="user-nav__menu-link" href="#">
-              <img class="user-nav__menu-img" src="images/icons/menu.svg" alt="menu">
-            </a>
-          </div>
+          </li>
+          <li class="menu__list-item">
+            <a class="menu__list-link" hreg="#">News</a>
+          </li>
+          <li class="menu__list-item">
+            <a class="menu__list-link" hreg="#">Contact</a>
+          </li>
+        </ul>
+      </nav>
+      <div class="user-nav">
+        <div class="user-nav__search">
+          <a class="user-nav__link" href="#">
+            <svg class="user-nav__img" width="15.28" height="15.281" viewBox="0 0 15.28 15.281">
+              <defs>
+                <style>
+                  .cls-1 {
+                    fill: #243f4d;
+                    fill-rule: evenodd;
+                  }
+                </style>
+              </defs>
+              <path id="icon" class="cls-1"
+                d="M1547.7,72.076a0.617,0.617,0,0,1,.75.485,2.583,2.583,0,0,0,.78,1.489,3.036,3.036,0,0,0,1.49.777,0.636,0.636,0,0,1,.49.743,0.649,0.649,0,0,1-.72.515,4.21,4.21,0,0,1-2.14-1.13,4.164,4.164,0,0,1-1.13-2.136A0.6,0.6,0,0,1,1547.7,72.076ZM1550.98,66a6.267,6.267,0,0,1,6.28,6.257,6.136,6.136,0,0,1-.57,2.6l2.34,2.036c1.7,1.746.74,3.266,0.29,3.717-0.42.454-1.99,1.414-3.73-.292l-2.06-2.35A6.261,6.261,0,1,1,1550.98,66Zm5.55,13.517a1.352,1.352,0,0,0,1.88.226,1.313,1.313,0,0,0-.23-1.874l-2.16-1.88a6.236,6.236,0,0,1-1.37,1.34Zm-5.55-2.312a4.948,4.948,0,1,0-4.97-4.948A4.963,4.963,0,0,0,1550.98,77.2Z"
+                transform="translate(-1544.72 -66)" />
+            </svg>
+          </a>
+        </div>
+        <div class="user-nav__purchase">
+          <a class="user-nav__purchase-link" href="#">
+            <img class="user-nav__purchase-img" src="images/icons/heart.svg" alt="like">
+            <span class="user-nav__num">o</span>
+          </a>
+          <img class="user-nav__purchase-line" src="images/icons/line.svg" alt="line">
+          <a class="user-nav__purchase-link" href="#">
+            <img class="user-nav__purchase-img" src="images/icons/cart.svg" alt="cart">
+            <span class="user-nav__num">o</span>
+          </a>
+        </div>
+        <div class="user-nav__menu">
+          <a class="user-nav__link" href="#">
+            <svg class="user-nav__img" xmlns="http://www.w3.org/2000/svg" width="20.03" height="20.031"
+              viewBox="0 0 20.03 20.031">
+              <defs>
+                <style>
+                  .cls-1 {
+                    fill: #243f4d;
+                    fill-rule: evenodd;
+                  }
+                </style>
+              </defs>
+              <path class="cls-1"
+                d="M1813.15,67.881a2.146,2.146,0,1,1,2.14-2.145A2.145,2.145,0,0,1,1813.15,67.881Zm0,7.869a2.146,2.146,0,1,1,2.14-2.147A2.146,2.146,0,0,1,1813.15,75.75Zm0,7.868a2.146,2.146,0,1,1,2.14-2.146A2.145,2.145,0,0,1,1813.15,83.618Zm7.86-15.737a2.146,2.146,0,1,1,2.15-2.145A2.143,2.143,0,0,1,1821.01,67.881Zm0,7.869a2.146,2.146,0,1,1,2.15-2.147A2.144,2.144,0,0,1,1821.01,75.75Zm0,7.868a2.146,2.146,0,1,1,2.15-2.146A2.143,2.143,0,0,1,1821.01,83.618Zm7.87-15.737a2.146,2.146,0,1,1,2.15-2.145A2.143,2.143,0,0,1,1828.88,67.881Zm0,7.869a2.146,2.146,0,1,1,2.15-2.147A2.144,2.144,0,0,1,1828.88,75.75Zm0,7.868a2.146,2.146,0,1,1,2.15-2.146A2.143,2.143,0,0,1,1828.88,83.618Z"
+                transform="translate(-1811 -63.594)" />
+            </svg>
+          </a>
         </div>
       </div>
     </div>
-  </header>
+  </div>
+</header>
+
   <main class="main">
 
     <section class="top-container">
@@ -365,100 +390,101 @@
     </section>
 
     <section class="blog">
-      <div class="container">
-        <div class="blog__inner">
-          <div class="blog__inner-top">
-            <h3 class="title blog__inner-title">
-              Our Insights & Articles
-            </h3>
-            <a class="blog__inner-link" href="#">
-              View All
+  <div class="container">
+    <div class="blog__inner">
+      <div class="blog__inner-top">
+        <h3 class="title blog__inner-title">
+          Our Insights & Articles
+        </h3>
+        <a class="blog__inner-link" href="#">
+          View All
+        </a>
+      </div>
+      <div class="blog__items">
+        <div class="blog__item">
+          <a class="blog__item-linkimg" href="#">
+            <img class="blog__item-img" src="images/content/blog/1.jpg" alt="blog image">
+          </a>
+          <div class="blog__item-content">
+            <a class="blog__item-news" href="#">News</a>
+            <a class="blog__item-title" href="#">
+              <h5 class="blog__item-title">
+                Diusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam
+              </h5>
             </a>
+            <div class="blog-box">
+              <div class="blog-box__date">28 JANUARY, 2020</div>
+              <a class="blog-box__author" href="#">BY ADMIN</a>
+            </div>
           </div>
-          <div class="blog__items">
-            <div class="blog__item">
-              <a class="blog__item-linkimg" href="#">
-                <img class="blog__item-img" src="images/content/blog/1.jpg" alt="blog image">
-              </a>
-              <div class="blog__item-content">
-                <a class="blog__item-news" href="#">News</a>
-                <a class="blog__item-title" href="#">
-                  <h5 class="blog__item-title">
-                    Diusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam
-                  </h5>
-                </a>
-                <div class="blog-box">
-                  <div class="blog-box__date">28 JANUARY, 2020</div>
-                  <a class="blog-box__author" href="#">BY ADMIN</a>
-                </div>
-              </div>
+        </div>
+        <div class="blog__item">
+          <a class="blog__item-imglink" href="#">
+            <img class="blog__item-img" src="images/content/blog/2.jpg" alt="blog image">
+          </a>
+          <div class="blog__item-content">
+            <a class="blog__item-news" href="#">News</a>
+            <a class="blog__item-title" href="#">
+              <h5 class="blog__item-title">
+                Aonsectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore
+              </h5>
+            </a>
+            <div class="blog-box">
+              <div class="blog-box__date">28 JANUARY, 2020</div>
+              <a class="blog-box__author" href="#">BY ADMIN</a>
             </div>
-            <div class="blog__item">
-              <a class="blog__item-imglink" href="#">
-                <img class="blog__item-img" src="images/content/blog/2.jpg" alt="blog image">
-              </a>
-              <div class="blog__item-content">
-                <a class="blog__item-news" href="#">News</a>
-                <a class="blog__item-title" href="#">
-                  <h5 class="blog__item-title">
-                    Aonsectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore
-                  </h5>
-                </a>
-                <div class="blog-box">
-                  <div class="blog-box__date">28 JANUARY, 2020</div>
-                  <a class="blog-box__author" href="#">BY ADMIN</a>
-                </div>
-              </div>
-            </div>
-            <div class="blog__item">
-              <a class="blog__item-linkimg" href="#">
-                <img class="blog__item-img" src="images/content/blog/3.jpg" alt="blog image">
-              </a>
-              <div class="blog__item-content">
-                <a class="blog__item-news" href="#">News</a>
-                <a class="blog__item-title" href="#">
-                  <h5 class="blog__item-title">
-                    Rncididunt ut labore et dolore magna aliqua. Ut enim
-                  </h5>
-                </a>
-                <div class="blog-box">
-                  <div class="blog-box__date">28 JANUARY, 2020</div>
-                  <a class="blog-box__author" href="#">BY ADMIN</a>
-                </div>
-              </div>
+          </div>
+        </div>
+        <div class="blog__item">
+          <a class="blog__item-linkimg" href="#">
+            <img class="blog__item-img" src="images/content/blog/3.jpg" alt="blog image">
+          </a>
+          <div class="blog__item-content">
+            <a class="blog__item-news" href="#">News</a>
+            <a class="blog__item-title" href="#">
+              <h5 class="blog__item-title">
+                Rncididunt ut labore et dolore magna aliqua. Ut enim
+              </h5>
+            </a>
+            <div class="blog-box">
+              <div class="blog-box__date">28 JANUARY, 2020</div>
+              <a class="blog-box__author" href="#">BY ADMIN</a>
             </div>
           </div>
         </div>
       </div>
-    </section>
+    </div>
+  </div>
+</section>
 
     <div class="clients">
-      <div class="container">
-        <ul class="clients__list">
-          <li class="clients__item">
-            <img class="clients__item-img" src="images/clients/1.png" alt="clients logo">
-          </li>
-          <li class="clients__item">
-            <img class="clients__item-img" src="images/clients/2.png" alt="clients logo">
-          </li>
-          <li class="clients__item">
-            <img class="clients__item-img" src="images/clients/3.png" alt="clients logo">
-          </li>
-          <li class="clients__item">
-            <img class="clients__item-img" src="images/clients/4.png" alt="clients logo">
-          </li>
-          <li class="clients__item">
-            <img class="clients__item-img" src="images/clients/5.png" alt="clients logo">
-          </li>
-        </ul>
-      </div>
-    </div>
+  <div class="container">
+    <ul class="clients__list">
+      <li class="clients__item">
+        <img class="clients__item-img" src="images/clients/1.png" alt="clients logo">
+      </li>
+      <li class="clients__item">
+        <img class="clients__item-img" src="images/clients/2.png" alt="clients logo">
+      </li>
+      <li class="clients__item">
+        <img class="clients__item-img" src="images/clients/3.png" alt="clients logo">
+      </li>
+      <li class="clients__item">
+        <img class="clients__item-img" src="images/clients/4.png" alt="clients logo">
+      </li>
+      <li class="clients__item">
+        <img class="clients__item-img" src="images/clients/5.png" alt="clients logo">
+      </li>
+    </ul>
+  </div>
+</div>
 
   </main>
+
   <footer class="footer">
     <div class="container">
-      <div class="footer-top">
-        <div class="footer-top__item">
+      <div class="footer-top footer-top--onpages">
+        <div class="footer-top__item--contacts">
           <a class="logo footer-top__logo" href="#">
             <img class="logo__img" src="images/logo.png" alt="logo">
           </a>
@@ -469,7 +495,7 @@
           <a class="footer-top__phone" href="tel:+8323475843">TELEPHONE: +832-347-5843</a>
           <a class="footer-top__email" href="emailto:contact@Glee.com">EMAIL: contact@Glee.com</a>
         </div>
-        <div class="footer-top__item">
+        <div class="footer-top__item-service">
           <h6 class="footer-top__title">Services</h6>
           <ul class="footer-top__list">
             <li class="footer-top__item">
@@ -489,7 +515,7 @@
             </li>
           </ul>
         </div>
-        <div class="footer-top__item">
+        <div class="footer-top__item-account">
           <h6 class="footer-top__title">Account</h6>
           <ul class="footer-top__list">
             <li class="footer-top__item">
@@ -506,8 +532,8 @@
             </li>
           </ul>
         </div>
-        <div class="footer-top__item">
-          <h6 class="footer-top__title">Newsletter</h6>
+        <div class="footer-top__item-newsletter">
+          <h6 class="footer-top__title footer-top__title--newsletter">Newsletter</h6>
           <p class="footer-top__text">
             Subscribe by our newsletter and get
             update protidin.
