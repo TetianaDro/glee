@@ -127,3 +127,59 @@
     background-image: url(../images/icons/user.svg);
   }
 }
+
+@media (max-width: 1200px) {
+  .blog {
+    &__item {
+      width: 33.3333%;
+      & + .blog__item {
+        margin-left: 20px;
+      }
+    }
+  }
+}
+
+@media (max-width: 1060px) {
+  .blog {
+    margin-bottom: -200px;
+    &__item-title {
+      height: 92px;
+    }
+    &__item-content {
+      padding-bottom: 0;
+    }
+  }
+  .blog-box {
+    flex-wrap: wrap;
+    &__date {
+      margin-bottom: 12px;
+    }
+  }
+}
+
+@media (max-width: 935px) {
+  .blog {
+    margin-bottom: 35px;
+  }
+  .blog__items{
+    display: grid;
+    grid-template-columns: repeat(2, 370px);
+    grid-gap: 20px;
+    .blog__item {
+      width: 100%;      
+    }
+    .blog__item + .blog__item {
+      margin-left: 0;
+    }
+  }
+}
+
+@media (max-width: 935px) {
+  .blog__items {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr); 
+  }
+  .blog__item {
+    width: 100%;
+  }
+}

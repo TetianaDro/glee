@@ -26,3 +26,27 @@
     margin-bottom: 12px;
   }
 }
+
+@media (max-width: 935px) {
+  .clients {
+    padding: 90px 0;
+  }
+}
+
+@media (max-width: 790px) {
+  .clients {
+    padding: 40px 0;
+    &__list {
+      flex-wrap: wrap;
+    }
+    &__item {
+      padding: 25px;
+    }
+  }
+}
+
+@media (max-width: 430px) {
+  .clients {
+    padding: 20px 0;
+  }
+}

@@ -52,3 +52,35 @@
     color: $neptun;
   }
 }
+
+@media (max-width: 1200px) {
+  .new-design {
+    &__filter-btn {
+      margin: 18px 0 40px;
+    }
+    &__inner {
+      grid-template-columns: repeat(2, 1fr);
+    }
+    &__item {
+      background-position: center right;
+    }
+  }
+}
+
+@media (max-width: 790px) {
+  .new-design {    
+    &__inner {
+      grid-template-columns: repeat(1, 1fr);
+    }
+  }
+}
+
+@media (max-width: 790px) {
+  .new-design {
+    &__item {
+      background-image: none !important;
+      background-color: #f8f8f8;
+      height: 142px;
+    }
+  }
+}

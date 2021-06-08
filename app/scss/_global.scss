@@ -101,3 +101,33 @@ a {
   justify-content: start;
   padding-top: 22px;
 }
+
+@media (max-width: 1200px) {
+  .container-fluid {
+    padding: 0 10px;
+  }
+  .title {
+    font-size: 30px;
+    line-height: 38px;
+  }
+}
+
+@media (max-width: 1060px) {
+  .title {
+    font-size: 28px;
+    line-height: 36px;
+  }
+}
+
+@media (max-width: 935px) {
+  .title {
+    font-size: 24px;
+    line-height: 30px;
+  }
+}
+
+@media (max-width: 790px) {
+  .container-fluid {
+    padding: 0;
+  }
+}
