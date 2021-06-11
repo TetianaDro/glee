@@ -66,6 +66,20 @@ a {
   }  
 }
 
+.top-container {
+  background-color: #edf1f4;
+  padding: 37px 0 30px;
+  text-align: center;
+
+  &__title {
+    @extend %rubik-300;
+    font-size: 36px;
+    line-height: 34px;
+    color: #222933;
+    margin-bottom: 12px;
+  }
+}
+
 .pagination {
   display: flex;
   justify-content: center;
@@ -106,28 +120,27 @@ a {
   .container-fluid {
     padding: 0 10px;
   }
-  .title {
-    font-size: 30px;
-    line-height: 38px;
-  }
 }
 
 @media (max-width: 1060px) {
   .title {
-    font-size: 28px;
+    font-size: 32px;
     line-height: 36px;
+  }
+  .breadcrumbs {
+    flex-wrap: wrap;
   }
 }
 
 @media (max-width: 935px) {
   .title {
-    font-size: 24px;
-    line-height: 30px;
+    font-size: 30px;
+    line-height: 32px;
   }
 }
 
 @media (max-width: 790px) {
   .container-fluid {
-    padding: 0;
+    padding: 0 5px;
   }
 }

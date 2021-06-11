@@ -11,6 +11,12 @@
 @import '../module/_clients/_clients';
 
 
+.shop {
+  &__filter-btn {
+    display: none;
+  }
+}
+
 .shop-page {
   padding: 116px 0 118px;
 
@@ -25,7 +31,7 @@
   }
 }
 
-.shop-content {
+.shop-content {  
    &__item {
     display: flex;
     margin-bottom: 45px;
@@ -110,3 +116,5 @@
     font-size: 15px;
   }
 }
+
+@import 'media';

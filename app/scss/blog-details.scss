@@ -22,6 +22,7 @@
 
     h3 {
       font-size: 36px;
+      line-height: 40px;
       color: $grey;
       padding: 41px 0 24px;
       letter-spacing: 0.2px;
@@ -373,3 +374,5 @@
 .blog-content {
   position: relative;
 }
+
+@import 'media';
