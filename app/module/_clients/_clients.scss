@@ -13,20 +13,6 @@
   padding-top: 76px;
 }
 
-.top-container {
-  background-color: #edf1f4;
-  padding: 37px 0 30px;
-  text-align: center;
-
-  &__title {
-    @extend %rubik-300;
-    font-size: 36px;
-    line-height: 24px;
-    color: #222933;
-    margin-bottom: 12px;
-  }
-}
-
 @media (max-width: 935px) {
   .clients {
     padding: 90px 0;

@@ -166,14 +166,20 @@
     }
   }
 }
+
+@media (max-width: 890px) {
+  .top-slider {
+    &__img {
+      display: none !important;
+    }
+  }
+}
+
 @media (max-width: 790px) {
   .top-slider {
     &__title {
       width: 100%;
       padding-right: 15px;
-    }
-    &__img {
-      display: none !important;
     }
   }
 }

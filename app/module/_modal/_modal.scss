@@ -87,3 +87,19 @@
     background-color: #ebebeb;
   }
 }
+
+@media (max-width: 570px) {
+  .modal {
+    padding-top: 60px;
+    max-width: 100%;
+    margin: 0 auto 70px;
+  }
+}
+
+@media (max-width: 360px) {
+  .modal {
+    &__form-bottom {
+      flex-direction: column;
+    }
+  }
+}

@@ -5,10 +5,12 @@
 @import '../../node_modules/slick-carousel/slick/slick.scss';
 @import '../../node_modules/rateyo/src/jquery.rateyo';
 @import '../../node_modules/jquery-form-styler/dist/jquery.formstyler';
+@import '../../node_modules/jquery-form-styler/dist/jquery.formstyler.theme';
 @import '../module/_header/_header';
 @import '../module/_footer/_footer';
 @import '../module/_clients/_clients';
 @import '../module/_blog/_blog';
+@import '../module/_products/_products';
 
 
 .product-slider {
@@ -363,3 +365,5 @@
     position: absolute;
   }
 }
+
+@import 'media';

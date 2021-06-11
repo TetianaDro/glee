@@ -9,7 +9,14 @@
 @import '../module/_footer/_footer';
 @import '../module/_filter/_filter';
 @import '../module/_clients/_clients';
+@import '../module/_products/_products';
 
+
+.shop {
+  &__filter-btn {
+    display: none;
+  }
+}
 
 .shop-page {
   padding: 116px 0 118px;
@@ -22,7 +29,7 @@
     min-width: 268px;
     margin-bottom: 60px;
     margin-right: 28px;
-  }
+  }  
 }
 
 .shop-content {
@@ -117,3 +124,5 @@
     position: absolute;
   }
 }
+
+@import 'media';
